@@ -1,0 +1,80 @@
+/* 基础版面部分 */
+
+
+/* ************************************************************* */
+
+#dh-backend-sitt {
+    min-width: 100%;
+    position: absolute;
+    background: #eff3f6 bottom;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* ********************************************************************** */
+
+/* sitt-form start */
+
+#backend-sitt-form .container {
+    width: 100% !important;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-sitt-form .container {
+        width: 973px !important;
+    }
+}
+
+#backend-sitt-form .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-sitt-form .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#backend-sitt-form .container .panel .panel-body {}
+#backend-sitt-form .container .panel .panel-body .sitt-form {}
+#backend-sitt-form .container .panel .panel-body .sitt-form .form-group  {
+    /* background-color: red; */
+    margin-bottom: 5px;
+}
+#backend-sitt-form .container .panel .panel-body .sitt-form .checkbox-inline {
+    line-height: 20px;
+    /* background-color: blue; */
+}
+#backend-sitt-form .container .panel .panel-body .sitt-form .form1  input {
+   
+}
+#backend-sitt-form .container .panel .panel-body .sitt-form .form2  input {
+   
+}
+#backend-sitt-form .container .panel .panel-body .sitt-form .form3  input {
+    width: 50%;
+}
+#backend-sitt-form .container .panel .panel-body .sitt-form .form4  input {
+    width: 50%;
+}
+
+.form-control{
+    margin-top: 5px;
+}
+.form-group input{
+    padding-left: 10px;
+}
+
+button{
+    margin-left: 90%;
+    background-color: #337ab7 !important;
+}
+/* sitt-form end */
+
+/* ********************************************************** */
+
+/* ***************************************************** */
+

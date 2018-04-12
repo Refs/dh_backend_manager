@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-stud.css">
+
+    <!-- <body > -->
+</head>
+
+<body>
+    <!-- backend-stud start -->
+    <div id="backend-stud">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">电站详情</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <a  class="block col-xs-3"  href="./_stud_xtsh.html" target="iframecon">
+                            <div class="xtsh">
+                            </div>
+                            <p>系统损耗</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">组件分析</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <a  href="./_stud_zj_xs_lsl.html" target="iframecon" class="block col-xs-3" >
+                            <div class="zj-xs-lsl">
+                            </div>
+                            <p>组件等效小时离散率</p>
+                        </a>
+                        <a href="./_stud_zj_wd_lsl.html" target="iframecon" class="block col-xs-3">
+                            <div class="zj-wd-lsl">
+                            </div>
+                            <p>组件温度离散率分析</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">逆变器</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <a href="./_stud_nbq_xs_lsl.html" target="iframecon" class="block col-xs-3">
+                            <div class="nbq-xs-lsl">
+                            </div>
+                            <p>逆变器等效小时离散率</p>
+                        </a>
+                        <a href="./_stud_nbq_jzl.html" target="iframecon" class="block col-xs-3">
+                            <div class="nbq-jzl">
+                            </div>
+                            <p>逆变器交直流变化</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                    <div class="panel-heading">系统分析</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <a href="./_stud_glfz.html" target="iframecon" class="block col-xs-3">
+                                <div class="glfz">
+                                </div>
+                                <p>功率辐照实时数据</p>
+                            </a>
+                            <a  href="./_stud_sjwd.html" target="iframecon" class="block col-xs-3">
+                                <div class="sjwd">
+                                </div>
+                                <p>时间维度下pr变化</p>
+                            </a>
+                            <a  href="./_stud_ccfx.html" target="iframecon" class="block col-xs-3">
+                                    <div class="ccfx">
+                                    </div>
+                                    <p>除尘分析</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- backend-stud end -->
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    // this.document.documentElement.scrollHeight = 0 ;
+    // window.parent.reinitIframe();
+    // alert(this.document.documentElement.scrollHeight);
+</script>

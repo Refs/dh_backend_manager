@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-regu.css">
+    <!-- <body > -->
+</head>
+
+<body>
+    <!-- backend   -->
+    <div id="dh-backend-regu">
+        <!-- backend-regu-form start -->
+        <div id="backend-regu-form">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">故障列表</div>
+                    <div class="panel-body">
+                        <div class="wrap1 clearfix">
+                            <div class="form1 pull-left">
+                                <label>时间</label>
+                                <select class="dh-form-control">
+                                    <option>2017-10-23</option>
+                                    <option>2017-10-23</option>
+                                    <option>2017-10-23</option>
+                                    <option>2017-10-23</option>
+                                    <option>2017-10-23</option>
+                                    <option>2017-10-23</option>
+                                </select>
+                            </div>
+                            <div class="form2 pull-left">
+                                <label>设备</label>
+                                <select class="dh-form-control">
+                                    <option>逆变器</option>
+                                    <option>逆变器</option>
+                                    <option>逆变器</option>
+                                    <option>逆变器</option>
+                                    <option>逆变器</option>
+                                </select>
+                            </div>
+                            <div class="form3 pull-left">
+                                <input class="dh-form-control" type="text" placeholder="请输入搜索内容">
+                            </div>
+                            <div class="form4 pull-left">
+                                <button type="submit" class="btn btn-default">搜索</button>
+                            </div>
+                        </div>
+                        <div class="wrap2">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> 故障
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> 告警
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> 建议
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- backend-regu-form end -->
+
+
+
+        <div id="backend-regu-table">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">电站名称</div>
+                    <table class="table table-bordered table-striped table-hover ">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>故障列表</th>
+                                <th>故障名称</th>
+                                <th>设备类型</th>
+                                <th>设备序列号</th>
+                                <th>开始时间</th>
+                                <th>结束时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>故障</td>
+                                <td>AFD模块异常告警</td>
+                                <td>逆变器</td>
+                                <td>4543524524523452345653</td>
+                                <td>2017-10-24 14:32:18</td>
+                                <td>2017-10-24 18:32:23</td>
+                                <td>
+                                    <a href="./_regu_history.html" target="iframecon">历史记录</a>&nbsp;/
+                                    <a href="#" id="regu-solutionBTN">已解决</a>&nbsp;/
+                                    <a href="#" id="regu-infoBTN">查看详情</a>
+                                </td>
+                            </tr>
+                
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    $('a[href="#"]').click(function (e) {
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    });
+    $('#regu-solutionBTN').on('click', function (e) {
+            window.parent.$("#regu-solution").modal()
+    });
+    $('#regu-infoBTN').on('click', function (e) {
+            window.parent.$("#dh-backend-content iframe").attr('src','./_backend_tables_char.html')
+            window.parent.$(".menu-item").removeClass("menu-item-active");
+            window.parent.$(".menu-item-char").addClass("menu-item-active");
+    });
+</script>

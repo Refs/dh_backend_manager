@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>多条件筛选插件</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<style>
+		body,
+		div,
+		ul,
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font: 14px/30px arial, "微软雅黑";
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		#wrap {
+			width: 1000px;
+			height: auto;
+			margin: 0 auto;
+		}
+
+		#wraptit li,
+		#wrapcon li {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			border-bottom: dotted 1px #999999;
+			clear: both
+		}
+
+		#wraptit li .yxz,
+		#wrapcon li span {
+			width: 100px;
+			padding-right: 10px;
+			text-align: right;
+			display: block;
+			float: left;
+			color: #666;
+			font-weight: bold;
+		}
+
+		#slide {
+			width: 90px;
+			height: 30px;
+			background: #06F;
+			border: none;
+			display: block;
+			float: right;
+			margin-top: 5px;
+			color: #fff;
+			border-radius: 3px;
+		}
+
+		#wrapcon li a {
+			padding: 0 10px;
+			cursor: pointer;
+			display: block;
+			float: left;
+		}
+
+		#wrapcon li a:hover {
+			color: #06F;
+		}
+
+		#wraptit li div {
+			padding: 3px 10px;
+			float: left;
+			border: solid 1px #999999;
+			border-radius: 3px;
+			height: 22px;
+			line-height: 22px;
+			margin: 5px 10px 0 0;
+			cursor: pointer;
+		}
+
+		#wraptit li div:hover {
+			border: solid 1px red;
+			color: red;
+		}
+
+		#wraptit li div span {
+			padding: 0 3px;
+			color: red;
+			font-size: 12px;
+		}
+
+		button,
+		input[type="button"] {
+			outline: none;
+			display: block;
+			float: left;
+			margin-top: 6px;
+		}
+
+		input[type="text"] {
+			width: 150px;
+			height: 24px;
+			border: solid 1px #999999;
+			border-radius: 3px;
+			display: block;
+			float: left;
+			margin-top: 6px;
+		}
+
+		input[type="button"] {
+			width: 60px;
+			height: 26px;
+			background: #333;
+			border-radius: 3px;
+			border: none;
+			margin-left: 15px;
+			color: #fff;
+		}
+
+		.hide {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<ul id="selected-st">
+			
+		</ul>
+		<ul id="optional-st">
+			<li>
+				张成电站
+			</li>
+			<li>
+				李华电站
+			</li>
+			<li>
+				张丽电站
+			</li>
+			<li>
+				刘明电站
+			</li>
+			<li>
+				王林电站
+			</li>
+			<li>
+				时雨名电站
+			</li>
+			<li>
+				张锋电站
+			</li>
+			<li>
+				李纲电站
+			</li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
+<script>
+	$('#optional-st').on('click','li',function(){
+		$('#selected-st').append($(this));
+	})
+	$('#selected-st').on('click','li',function(){
+		$('#optional-st').append($(this));
+	})
+</script>

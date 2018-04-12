@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-stud.css">
+
+    <!-- <body > -->
+</head>
+
+<body>
+    <!-- backend   -->
+    <div id="stud-xtsh">
+        <!-- xtsh-photo start -->
+        <div id="xtsh-photo">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="dh-font dh-fanhui"></span>
+                        系统之间的损耗</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <h6>陈奕迅电站</h6>
+                            </div>
+                            <div class="col-xs-2 xtsh-input">
+                                <select class="form-control" id="exampleInputName2">
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                    <option>2017-10-19&nbsp;15:36</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-1">
+                                <button type="submit" class="btn btn-default">查询</button>
+                            </div>
+                        </div>
+                        <div class="row row2">
+                            <div class="col-xs-1">
+                                <p>损耗分析</p>
+                                <p class="xtsh-data">89.18%</p>
+                                <p>系统效率</p>
+                            </div>
+                        </div>
+                        <div class="row row3">
+                            <div class="col-xs-1 col-offset-1">
+                                <div class="xysh-photo-sun">
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-offset-1 ">
+                                    <div class="xysh-photo-xia x1">
+                                    </div>
+                                    <p class="xtsh-data">9.32度</p>
+                                </div>
+                            <div class="col-xs-1 col-offset-1">
+                                <p class="xtsh-data">89.18%</p>
+                                <p>系统效率</p>
+                                <div class="xysh-photo1 p1">
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-offset-1">
+                                    <div class="xysh-photo-xia x2">
+                                    </div>
+                                    <p class="xtsh-data">9.32度</p>
+                                </div>
+                            <div class="col-xs-1 col-offset-1">
+                                <p class="xtsh-data">89.18%</p>
+                                <p>系统效率</p>
+                                <div class="xysh-photo1 p2">
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-offset-1">
+                                    <div class="xysh-photo-xia x3">
+                                    </div>
+                                    <p class="xtsh-data">9.32度</p>
+                                </div>
+                            <div class="col-xs-1 col-offset-1">
+                                <p class="xtsh-data">89.18%</p>
+                                <p>系统效率</p>
+                                <div class="xysh-photo1 p3">
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-offset-1">
+                                    <div class="xysh-photo-xia x4">
+                                    </div>
+                                    <p class="xtsh-data">9.32度</p>
+                                </div>
+                            <div class="col-xs-1 col-offset-1">
+                                <p class="xtsh-data">89.18%</p>
+                                <p>系统效率</p>
+                                <div class="xysh-photo1 p4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- xtsh-photo end -->
+        <!-- xtsh-table start -->
+        <div id="xtsh-table">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">系统损耗台账</div>
+                    <table class="table table-striped table-hover table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th>时间</th>
+                                    <th>理论发电量(kwh)</th>
+                                    <th colspan="2"> 组串损耗</th>
+                                    <th colspan="2">直流线缆损耗</th>
+                                    <th colspan="2">逆变器损耗</th>
+                                    <th colspan="2">交流汇流箱及交流线缆损耗</th>
+                                    <th>系统效率(%)</th>
+                                </tr>
+                                <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th>组件总输出电量(kwh)</th>
+                                        <th>损耗比(%)</th>
+                                        <th>逆变器输入电量(kwh)</th>
+                                        <th>损耗比(%)</th>
+                                        <th>逆变器输出(kwh)</th>
+                                        <th>损耗比(%)</th>
+                                        <th>电表电量(kwh)</th>
+                                        <th>损耗比(%)</th>
+                                        <th></th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2017-10-19</td>
+                                    <td>9.23</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>3</td>
+                                    <td>27.9</td>
+                                    <td>27.9</td>
+                                    <td>2.02</td>
+                                    <td>87.9</td>
+                                </tr>
+                                <tr>
+                                    <td>2017-10-19</td>
+                                    <td>9.23</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>3</td>
+                                    <td>27.9</td>
+                                    <td>27.9</td>
+                                    <td>2.02</td>
+                                    <td>87.9</td>
+                                </tr>
+                                <tr>
+                                    <td>2017-10-19</td>
+                                    <td>9.23</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>9.23</td>
+                                    <td>89.17</td>
+                                    <td>3</td>
+                                    <td>27.9</td>
+                                    <td>27.9</td>
+                                    <td>2.02</td>
+                                    <td>87.9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- xtsh-table end -->
+    </div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    // this.document.documentElement.scrollHeight = 0 ;
+    // window.parent.reinitIframe();
+    // alert(this.document.documentElement.scrollHeight);
+</script>

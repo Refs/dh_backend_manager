@@ -1,0 +1,176 @@
+/* backend-scho start */
+
+#backend-scho-form .container {
+    width: 100% !important;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-scho-form .container {
+        width: 973px !important;
+    }
+}
+
+#backend-scho-form .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-scho-form .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-scho-form .container .panel .panel-body {
+    padding: 0px;
+}
+
+#backend-scho-form .container .panel .panel-body .wrap {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+#backend-scho-form .container .panel .panel-body .wrap .form1 {
+    margin-left: 10px;
+    margin-right: 16px;
+    padding-right: 18px;
+    border-right: 1px solid #B9B9C8;
+}
+#backend-scho-form .container .panel .panel-body .wrap .form1 select {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 30px;
+}
+#backend-scho-form .container .panel .panel-body .wrap .form2 {
+    margin-left: 10px;
+    margin-right: 16px;
+    padding-right: 18px;
+    border-right: 1px solid #B9B9C8;
+}
+#backend-scho-form .container .panel .panel-body .wrap .form2 input{
+    width: 70px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 30px;
+}
+#backend-scho-form .container .panel .panel-body .wrap .form3 {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#backend-scho-form .container .panel .panel-body .wrap .form4 button {
+    color: #525252;
+}
+
+
+
+#backend-scho-form .container .panel .table{}
+#backend-scho-form .container .panel .table th{
+    text-align: center ;
+    vertical-align: middle;
+}
+#backend-scho-form .container .panel .table td{
+    text-align: center ;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-scho-form .container .panel .table td a{
+    color: #3349b7;
+}
+
+/* backend-scho end */
+
+
+
+
+.block {
+    height: 94px;
+    /* width: 270px; */
+    /* background-color: red; */
+    margin-left: 1%;
+    margin-right: 1%;
+    /* padding: 0px 75px; */
+    padding-left: 58px;
+    margin: 0px;
+    border: 1px solid white;
+}
+
+.block div {
+    margin-top: 14px;
+    height: 46px;
+    padding-left: 52px;
+    margin-bottom: 4px;
+    /* width: 20%; */
+}
+
+.block div .info-first {
+    margin-bottom: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+.block div .info-second {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.block p {
+    color: white;
+    font-size: 12px;
+    /* font-weight: bold; */
+}
+
+.blue {
+    background-color: #168CE6;
+}
+
+.blue div {
+    background: url(../img/home-st-info-blue.jpg) left no-repeat #168CE6;
+}
+
+.red {
+    background-color: #F9683C;
+}
+
+.red div {
+    background: url(../img/home-st-info-red.jpg) left no-repeat #F9683C;
+}
+
+.purple {
+    background-color: #AD8DFC;
+}
+
+.purple div {
+    background: url(../img/home-st-info-purple.jpg) left no-repeat #AD8DFC;
+}
+
+.green {
+    background-color: #61BD2C;
+}
+
+.green div {
+    background: url(../img/home-st-info-green.jpg) left no-repeat #61BD2C;
+}
+
+
+.block3{
+    /* border-left: 1px solid gray; */
+    padding: 0px;
+}
+.block3 .xiazuan{
+    height: 90px;
+    background: url(../img/scho_st_info_xiazuan.jpg) center no-repeat white;
+}
+.block3 p{
+    margin-bottom:0px; 
+}
+.block3 p span{
+    color: #E76D22;
+}

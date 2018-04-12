@@ -1,0 +1,74 @@
+/* 基础版面部分 */
+
+#dh-backend-usr {
+    min-width: 100%;
+    position: absolute;
+    background: #eff3f6 bottom;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* usr-form start */
+
+#backend-usr-form .container {
+    width: 100% !important;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-usr-form .container {
+        width: 973px !important;
+    }
+}
+
+#backend-usr-form .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-usr-form .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#backend-usr-form .container .panel .panel-body {}
+
+/* usr-form end */
+
+/* ********************************************************** */
+
+/* usr-table start */
+#backend-usr-table .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-usr-table .container {
+        width: 973px !important;
+    }
+}
+
+#backend-usr-table .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-usr-table .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-usr-table .container .panel .panel-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* usr-table end */
+
+
+

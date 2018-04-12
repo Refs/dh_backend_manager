@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+
+	</head>
+
+	<body>
+		<!-- dh-backend start -->
+		<div id="dh-backend">
+			<!-- 左侧菜单栏目块 -->
+			<!-- 将类设为show 让其一直显示 -->
+			<div class="rightmenu">
+				<a class="menu-item menu-item-active " href="./_backend_tables_search.html" target="">
+					<span class="dh-font dh-icon"></span>
+					<p>搜索</p>
+				</a>
+				<a class="menu-item " href="./_backend_tables_wechat.html" target="">
+					<span class="dh-font dh-erweima" style="font-size:23px; font-weight:550"></span>
+					<p>二维码</p>
+				</a>
+				<a class="menu-item" href="./_backend_tables_constructor.html" target="">
+					<span class="dh-font dh-chuangjian"></span>
+					<p>创建</p>
+				</a>
+			</div>
+			<!-- 右侧具体内容栏目 -->
+	</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script src="./js/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script>
+	$(function () {
+		$(".menu-item").click(function () {
+			$(".menu-item").removeClass("menu-item-active");
+			$(this).addClass("menu-item-active");
+
+		});
+
+	})
+</script>

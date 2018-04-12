@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-sitt.css">
+
+    <!-- <body > -->
+</head>
+
+<body>
+    <!-- backend   -->
+    <div id="dh-backend-sitt">
+        <!-- backend-sitt-form start -->
+        <div id="backend-sitt-form">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">意见反馈</div>
+                    <div class="panel-body">
+
+                        <div class="sitt-form">
+
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1"> 咨询
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2"> 建议
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox3" value="option3"> 其它
+                            </label>
+
+                            <textarea class="form-control" rows="10" placeholder="你的宝贵意见将是我们前进的动力"></textarea>
+                            <div class="form-group">
+                                    <label for="sitt-InputEmail1">邮箱（选填）：</label>
+                                    <input type="email" class="form-control" id="sitt-InputEmail1" placeholder="以便我们给您回复">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="sitt-InputOther1">其它（选填）</label>
+                                    <input type="text" class="form-control" id="sitt-InputOther1" placeholder="其它联系方式（qq或者手机号）">
+                                  </div>
+                            <button type="submit" class="btn btn-default">意见提交</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- backend-sitt-form end -->
+
+    </div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    // this.document.documentElement.scrollHeight = 0 ;
+    // window.parent.reinitIframe();
+    // alert(this.document.documentElement.scrollHeight);
+</script>

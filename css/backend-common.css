@@ -1,0 +1,813 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*外层框架样式*/
+
+body {
+	min-width: 100%;
+	height: auto;
+	font-family: "微软雅黑"!important;
+	/* overflow-x: hidden;   */
+	/* overflow-y: hidden;  */
+}
+
+.container-fluid {
+	padding-left: 0!important;
+}
+
+
+/* ****************************************************************************************************** */
+
+
+/* ## navbar部分 */
+
+#dh-backend-nav .navbar {
+	margin-bottom: 0px !important;
+}
+
+#dh-backend-nav .navbar-default {
+	background-color: #004983;
+}
+
+#dh-backend-nav .navbar-default .navbar-nav>li>a {
+	color: white;
+	font-weight: 300;
+}
+
+
+/* > 控制导航条折叠将其阈值调到 420px 以后若有bug还可以继续调低 */
+
+@media (max-width: 120px) {
+	#dh-backend-nav .navbar-collapse .nav>.divider-vertical {
+		display: none;
+	}
+}
+
+#dh-backend-nav .navbar .divider-vertical {
+	height: 50px;
+	margin: 0 9px;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #DADADA;
+}
+
+#dh-backend-nav .navbar-inverse .divider-vertical {
+	border-right-color: #222222;
+	border-left-color: #111111;
+}
+
+@media only screen and (min-width: 420px) {
+	#dh-backend-nav .collapse {
+		display: block;
+	}
+	#dh-backend-nav .navbar-header {
+		float: left;
+	}
+	#dh-backend-nav .navbar-toggle {
+		display: none;
+	}
+	#dh-backend-nav .navbar-nav {
+		float: left;
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#dh-backend-nav .navbar-nav>li {
+		float: left;
+	}
+	#dh-backend-nav .navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#dh-backend-nav .navbar-right {
+		float: right!important;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	#dh-backend-nav .collapse {
+		display: none;
+	}
+	#dh-backend-nav .navbar-header {
+		display: block;
+	}
+}
+
+#dh-backend-nav .container {
+	width: 1170px !important;
+	padding: 0px !important;
+}
+
+
+/* > 调整导航条的高度 */
+
+#dh-backend-nav .navbar-nav>li>a,
+#dh-backend-nav .navbar-brand {
+	padding-top: 5px !important;
+	padding-bottom: 0 !important;
+	height: 30px;
+	font-size: 13px;
+    font-weight: 100 !important;
+}
+
+#dh-backend-nav .navbar {
+	min-height: 30px !important;
+}
+
+/* 控制浮动的折叠 */
+@media (max-width: 973px) {
+    #dh-backend-nav .nav-control{
+        width: 973px !important;
+    }
+}
+
+/* ************************************************************************************* */
+
+
+/* ## jumbotron部分 */
+
+#dh-backend-jumbotron .container {
+	width: 1170px !important;
+	position: relative;
+}
+
+
+/* > 更改背景图片  放稳尺寸*/
+
+#dh-backend-jumbotron .jumbotron {
+	background-color: #FFFFFF;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	height: 70px;
+}
+
+
+/* > 添加logo链接 */
+
+#dh-backend-jumbotron .jumbotron .logo {
+	float: left;
+	/* display: block; */
+	height: 70px;
+	width: 180px;
+	background: url(../img/home-jumbotron-logo-background.png) center no-repeat;
+	margin-left: 20px;
+}
+
+#dh-backend-jumbotron .jumbotron .jumbotron-background {
+	position: absolute;
+	top: 7%;
+	margin-top: -27px;
+	left: 160px;
+	float: left;
+	height: 70px;
+	width: 810px;
+	background: url(../img/home-jumbotron-background.png) center no-repeat;
+}
+
+
+/* ********************************************************************** */
+
+
+/*  leftmenu  部分 */
+
+#dh-backend-menu {
+	/* min-width: 100%; */
+	/* position: absolute; */
+	/* top: 10px; */
+	/* position: absolute; */
+	/* top:20px */
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	background: rgb(216, 216, 216);
+	min-height: 100%;
+	overflow: hidden;
+	width: 70px;
+}
+
+#dh-backend-menu .leftmenu {
+	/* box-sizing: border-box; */
+	width: 100%;
+	height: 100%;
+	/* 此处用来修改左侧面板的主体色调 */
+	background: rgb(216, 216, 216);
+}
+
+#dh-backend-menu .leftmenu>a {
+	/* padding-left: 20px; */
+	text-align: center;
+}
+
+
+/* 默认的文字样式 */
+
+#dh-backend-menu .leftmenu .menu-item {
+	display: block;
+	line-height: 60px;
+	height: 70px;
+	color: #5b6975;
+	cursor: pointer;
+}
+
+#dh-backend-menu .leftmenu .menu-item:hover {
+	background-color: rgb(24, 148, 236);
+	border-right: 4px solid rgb(0, 73, 131);
+	color: #fff;
+}
+
+#dh-backend-menu .leftmenu .menu-item>span {
+	font-size: 28px;
+	/* line-height: 26px; */
+}
+
+#dh-backend-menu .leftmenu .menu-item>p {
+	margin-top: -24px;
+}
+
+#dh-backend-menu .leftmenu .menu-item a {
+	color: #aab1b7;
+	display: block;
+}
+
+#dh-backend-menu .leftmenu .menu-item-active a {
+	color: #c4c7cc;
+	display: block;
+}
+
+#dh-backend-menu .leftmenu .menu-item img {
+	padding-right: 8px;
+	height: 20px;
+}
+
+#dh-backend-menu .leftmenu .menu-item-active {
+	background-color: rgb(24, 148, 236);
+	border-right: 4px solid rgb(0, 73, 131);
+	color: #fff;
+}
+
+
+/* ******************************************************************** */
+
+
+/*  right-affix  部分 */
+
+#dh-backend-affix {
+	position: fixed;
+	top: 110px;
+	right: 0px;
+	background: rgba(0, 0, 0, 0);
+	/* height: 100px;; */
+	overflow: hidden;
+	width: 70px;
+	padding-left: 6px;
+}
+
+#dh-backend-affix .rightaffix {
+	/* position: absolute; */
+	box-sizing: border-box;
+	width: 65px;
+	height: 100%;
+	/* 背景透明 */
+	background: rgba(0, 0, 0, 0);
+}
+
+#dh-backend-affix .rightaffix>a {
+	text-align: center;
+}
+
+#dh-backend-affix .rightaffix .affix-item {
+	display: block;
+	line-height: 55px;
+    height: 60px;
+    width: 60px;
+	color: #5b6975;
+	cursor: pointer;
+	background-color: #EEEEEE;
+	margin-top: 10px;
+	border-radius: 18px;
+}
+#dh-backend-affix .rightaffix .affix-item p {
+	font-size: 13px;
+	/* margin-top: 5px !important; */
+}
+
+#dh-backend-affix .rightaffix .affix-item-button {
+	/* padding: 0px 15px; */
+	padding: 0 !important;
+}
+
+#dh-backend-affix .rightaffix .affix-item:hover {
+	background-color: rgb(157, 165, 171);
+	color: #272424;
+	border: none !important;
+}
+
+#dh-backend-affix .rightaffix .affix-item:focus {
+	outline: none;
+	border: none;
+}
+
+#dh-backend-affix .rightaffix .affix-item>span {
+	font-size: 28px;
+	line-height: 26px;
+	padding-left: 5px;
+}
+
+#dh-backend-affix .rightaffix .affix-item>p {
+	margin-top: -24px;
+	padding-top: 3px;
+}
+
+#dh-backend-affix .rightaffix .affix-item a {
+	color: #aab1b7;
+	display: block;
+}
+
+#dh-backend-affix .rightaffix .affix-item-active a {
+	color: #c4c7cc;
+	display: block;
+}
+
+#dh-backend-affix .rightaffix .affix-item img {
+	padding-right: 8px;
+	height: 20px;
+}
+
+#dh-backend-affix .rightaffix .affix-item-active {
+	background-color: rgb(157, 165, 171);
+	/* border-right: 4px solid rgb(0, 73, 131); */
+	color: #272424;
+}
+
+
+/* ***************************************************** */
+
+
+/* affix-search start */
+
+#affix-search {}
+
+#affix-search .modal-dialog {
+	width: 900px !important;
+}
+
+#affix-search .modal-dialog .btn-primary {}
+
+#affix-search .modal-dialog .modal-content {}
+
+#affix-search .modal-dialog .modal-content .modal-header {}
+
+#affix-search .modal-dialog .modal-content .modal-body {}
+
+#affix-search .modal-dialog .modal-content .modal-footer {}
+
+#affix-search .modal-dialog .modal-content .modal-footer button.btn-primary {
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+
+#affix-search .modal-search {
+	position: relative;
+}
+
+#affix-search .modal-search .search-div {
+	width: 100%;
+	float: left;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+#affix-search .modal-search .search-div .search-div-in {
+	margin-right: 120px;
+	position: relative;
+}
+
+#affix-search .modal-search .search-div .search-div-in input {
+	box-sizing: border-box;
+	padding-right: 20px;
+	border: none;
+	font-size: 14px;
+	text-indent: 1em;
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	float: left;
+	vertical-align: middle;
+}
+
+#affix-search .modal-search .search-div .search-div-in i {
+	position: absolute;
+	right: -3px;
+	top: 5px;
+	cursor: pointer;
+	/* font-family: "iconfont"; */
+	font-size: 16px;
+	font-style: normal;
+}
+
+#affix-search .modal-search .btns {
+	width: 120px;
+	/* float: left; */
+	position: absolute;
+	right: 0px;
+	margin-left: -120px;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#affix-search .modal-search .btns input {
+	float: left;
+	height: 38px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #1976D2;
+	width: 70px;
+	vertical-align: middle;
+	font-size: 100%;
+}
+
+#affix-search .modal-search .btns button {
+	background: none;
+	border: 0px;
+	height: 32px;
+	margin-top: 4px;
+	width: 50px;
+	border-left: 1px solid #5FB3E8;
+	float: left;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#affix-search .modal-search .btns button i {
+	color: #108def;
+	height: 30px;
+	line-height: 30px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+
+/* affix-search end */
+
+
+/* affix-research start */
+
+#affix-search .modal-research {}
+
+#affix-search .modal-research .research_div {
+	border: 1px solid #1976D2;
+	width: 96.5%;
+	position: absolute;
+	top: 56px;
+	height: 230px;
+	background-color: #fff;
+	z-index: 99;
+	display: none;
+}
+
+#affix-search .modal-research .research_div .research_div_in {
+	padding: 22px;
+	padding-bottom: 0px;
+}
+
+
+/* affix-research end */
+
+
+/* research-pane start */
+
+#affix-search .select {
+	padding: 5px 10px;
+	/* border: #ddd 1px solid; */
+	/* border-radius: 4px; */
+	width: 100%;
+	/* margin: 5% auto; */
+	font-size: 12px
+}
+
+#affix-search .select li {
+	list-style: none;
+	/* padding: 10px 0 5px 100px */
+	padding-top: 0px;
+	padding-left: 100px;
+}
+
+#affix-search .select .select-list {
+	border-bottom: #ead8d8 1px dashed
+}
+
+#affix-search .select dl {
+	zoom: 1;
+	position: relative;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-top: 8px;
+}
+
+#affix-search .select dl:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+
+#affix-search .select dt {
+	width: 100px;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 0;
+	left: -100px;
+	text-align: right;
+	color: #666;
+	height: 24px;
+	line-height: 24px
+}
+
+#affix-search .select dd {
+	float: left;
+	display: inline;
+	margin: 0 0 5px 5px;
+}
+
+#affix-search .select a {
+	display: inline-block;
+	white-space: nowrap;
+	height: 24px;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #039;
+	border-radius: 2px;
+}
+
+#affix-search .select a:hover {
+	color: #2c6998;
+	background-color: #e0e2ec;
+}
+
+#affix-search .select .selected a {
+	color: #fff;
+	background-color: #337ab7;
+}
+
+#affix-search .select-result dt {
+	font-weight: bold
+}
+
+#affix-search .select-no {
+	color: #999
+}
+
+#affix-search .select .select-result a {
+	padding-right: 20px;
+	background: #337ab7 url("close.gif") right 9px no-repeat
+}
+
+#affix-search .select .select-result a:hover {
+	background-position: right -15px
+}
+
+
+/* research-pane end */
+
+
+/* modal-table start */
+
+#affix-search .modal-table {}
+
+#affix-search .modal-table .table {}
+
+#affix-search .modal-table .table thead {}
+
+#affix-search .modal-table .table thead tr {}
+
+#affix-search .modal-table .table thead tr th {
+	text-align: center;
+}
+
+#affix-search .modal-table .table tbody {}
+
+#affix-search .modal-table .table tbody tr {}
+
+#affix-search .modal-table .table tbody tr td {
+	text-align: center;
+}
+
+#affix-search .modal-table .table tbody tr td a {
+	color: #1976D2;
+}
+
+
+/* modal-table end */
+
+
+/* affix-search end */
+
+
+/* ********************************************************** */
+
+
+/* affix-wechat-modal start */
+
+#affix-wechat {}
+
+#affix-wechat .modal-dialog {}
+
+#affix-wechat .modal-dialog .modal-content {}
+
+#affix-wechat .modal-dialog .modal-content .modal-header {}
+
+#affix-wechat .modal-dialog .modal-content .modal-header h4 {
+	text-align: center;
+}
+
+#affix-wechat .modal-dialog .modal-content .modal-body {
+	position: relative;
+}
+
+#affix-wechat .modal-dialog .modal-content .modal-body .modal-wechat {
+	width: 300px;
+	height: 300px;
+	margin-left: 134px;
+	background: url(../img/wechat-background.png) center no-repeat;
+}
+
+
+/* affix-wechat-modal end */
+
+
+/* *********************************************************** */
+
+
+/* user-st-auth modal start */
+
+#user-st-auth {}
+
+#user-st-auth .modal-dialog {}
+
+#user-st-auth .modal-dialog .modal-content {}
+
+#user-st-auth .modal-dialog .modal-content .modal-header {}
+
+#user-st-auth .modal-dialog .modal-content .modal-header h4 {}
+
+#user-st-auth .modal-dialog .modal-content .modal-body {}
+
+#user-st-auth .modal-dialog .modal-content .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 75px;
+}
+
+
+/* user-st-auth modal end */
+
+
+/* user-st-auth modal start */
+
+#user-func-list ul {
+	padding-left: 20px;
+}
+
+#user-func-list li {
+	list-style: none;
+}
+
+#user-func-list ul.hide {
+	display: none;
+}
+
+#user-func-list span {
+	color: #999;
+	cursor: default;
+}
+
+#user-func-list span.expanded,
+#user-func-list span.collapsed {
+	cursor: pointer;
+	display: none;
+}
+#user-func-auth .modal-dialog .modal-content .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 75px;
+}
+
+/* user-st-auth modal end */
+
+/* user-add-person modal start */
+#user-add-form{}
+#user-add-form input{
+	padding-left: 12px;
+}
+#user-add-form input:hover{
+	border-color: #1976D2;
+}
+#user-add-form input:focus{
+	border-color: #1976D2;
+}
+#user-add-form select{
+	width: 78% !important;
+	margin-left: 14px;
+	padding-left: 12px;
+}
+#user-add-form select:hover{
+	border-color: #1976D2;
+}
+#user-add-form select:focus{
+	border-color: #1976D2;
+}
+#user-add .modal-dialog .modal-content .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 75px;
+}
+/* user-add-person modal end */
+
+
+/* conf-info-modal start */
+#conf-info-form{}
+#conf-info-form input{
+	padding-left: 12px;
+}
+#conf-info-form input:hover{
+	border-color: #1976D2;
+}
+#conf-info-form input:focus{
+	border-color: #1976D2;
+}
+#conf-info-form select{
+	width: 78% !important;
+	margin-left: 14px;
+	padding-left: 12px;
+}
+#conf-info-form select:hover{
+	border-color: #1976D2;
+}
+#conf-info-form select:focus{
+	border-color: #1976D2;
+}
+#conf-info .modal-dialog .modal-content .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 120px;
+}
+/* conf-info-modal end */
+
+/* conf-app-modal start */
+#conf-app-form{}
+#conf-app-form input{
+	padding-left: 12px;
+}
+#conf-app-form input:hover{
+	border-color: #1976D2;
+}
+#conf-app-form input:focus{
+	border-color: #1976D2;
+}
+#conf-app-form select:hover{
+	border-color: #1976D2;
+}
+#conf-app-form select:focus{
+	border-color: #1976D2;
+}
+
+#conf-app-form textarea:hover{
+	border-color: #1976D2;
+}
+#conf-app-form textarea:focus{
+	border-color: #1976D2;
+}
+#conf-app .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 120px;
+}
+/* conf-app-modal end */
+
+/* regu-solution start */
+
+#regu-solution textarea:hover{
+	border-color: #1976D2;
+}
+#regu-solution textarea:focus{
+	border-color: #1976D2;
+}
+#regu-solution .modal-footer .btn-primary {
+	color: #fff;
+	background-color: #337ab7;
+	width: 120px;
+}
+/* regu-solution end */
+
+
+/* right-content */
+
+#dh-backend-content {
+	margin-left: 70px;
+	margin-right: 70px;
+}

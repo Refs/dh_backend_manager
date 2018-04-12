@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-templete.css">
+    <style>
+
+        .goToppanel{
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            margin-left: -375px;
+            margin-top: -50px;
+            background-color: red;
+            list-style: none;
+        }
+        .qr-code-container {
+            margin: 0;
+            /* padding: 0; */
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+
+            /* display: none; */
+            width: 330px;
+            height: 130px;
+            /* padding: 20px; */
+            
+          
+            
+            color: #333;
+            text-align: left;
+            background: #eff1f4;
+            border-radius: 3px;
+            box-shadow: 0 2px 3px #ccc;
+        }
+
+        .qr-code-container .left {
+            float: left;
+            width: 130px;
+            height: 130px;
+        }
+
+        .qr-code-container .item-container .img-container {
+            display: block;
+            width: 100%;
+        }
+
+        .item-container .img-container img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        .qr-code-container .right {
+            float: right;
+            width: 182px;
+        }
+
+        .qr-code-container .item-container .title {
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .qr-code-container .item-container ul {
+            margin-left: 20px;
+        }
+
+        #goTop .qr-code-container .item-container ul li {
+            list-style: disc;
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    </style>
+
+    <!-- <body > -->
+</head>
+
+<body>
+
+
+    <!-- backend   -->
+    <div id="dh-backend-usr">
+        <!-- backend-usr-form start -->
+        <div id="backend-usr-form">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">发电趋势</div>
+                    <div class="panel-body">
+                        <div class="dropdown">
+                            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown trigger
+                              <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                              <li>1</li>
+                              <li>2</li>
+                              <li>3</li>   
+                            </ul>
+                          </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- backend-usr-form end -->
+
+
+
+        <!-- backend-usr-table start -->
+        <div id="backend-usr-table">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">电站介绍</div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- backend-usr-table end -->
+    </div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    // this.document.documentElement.scrollHeight = 0 ;
+    // window.parent.reinitIframe();
+    // alert(this.document.documentElement.scrollHeight);
+</script>

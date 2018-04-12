@@ -1,0 +1,323 @@
+/* 基础版面部分 */
+
+#dh-backend-person {
+    min-width: 100%;
+    position: absolute;
+    background: #eff3f6 bottom;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* usr-form start */
+
+#backend-person-form1 .container {
+    width: 100% !important;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-person-form1 .container {
+        width: 973px !important;
+    }
+}
+
+#backend-person-form1 .container .panel {
+    margin-bottom: 2px;
+}
+
+
+
+#backend-person-form1 .panel-tit {
+    height: 40px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#backend-person-form1 .panel-tit_txt {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 15px;
+}
+
+#backend-person-form1 .panel-tit-image1 {
+    width: 12px;
+    height: 2px;
+    background: url(../img/personal-panel-tit1.png) center left no-repeat;
+}
+
+#backend-person-form1 .panel-tit-image2 {
+    width: 12px;
+    height: 2px;
+    background: url(../img/personal-panel-tit2.png) center left no-repeat;
+}
+
+#backend-person-form1 .panel-tit_btn {
+    color: #3d88c2;
+    font-size: 34px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+em {
+    font-style: normal;
+}
+
+/* panel-content start */
+#backend-person-form1 .container .panel .panel-content {}
+
+#backend-person-form1 .panel-content-table {
+    width: 100%;
+    margin-bottom: 29px;
+}
+#backend-person-form1 .panel-content-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#backend-person-form1 .panel-content-table tr {
+    height: 39px;
+}
+#backend-person-form1 .panel-content-table td.td1 {
+    /* background: none; */
+    text-align: right;
+}
+
+#backend-person-form1 .panel-content-table tr td:nth-child(2n) {
+    color: gray;
+ }
+ #backend-person-form1 .panel-content-table tr td:nth-child(2n-1) {
+    background: #edf2f6 !important;
+}
+
+#backend-person-form1 .panel-content-table td {
+    padding: 0 12px;
+    border: 1px solid #e2e2e2;
+}
+
+#backend-person-form1 .panel-content-table table tr td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#backend-person-form1 .panel-content-table td.td2 {
+    background: none;
+    text-align: left;
+}
+#backend-person-form1 .panel-content-table tr td input {
+    border: none;
+ }
+ #backend-person-form1 .panel-content-table tr td input:focus {
+    outline: none;
+ }
+
+
+/* usr-form end */
+
+
+/* ********************************************************** */
+
+
+/* usr-table start */
+
+#backend-person-form2 .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-person-form2 .container {
+        width: 973px !important;
+    }
+}
+
+#backend-person-form2 .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-person-form2 .panel-tit {
+    height: 40px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+#backend-person-form2 .panel-tit-btn {
+    color: #3d88c2;
+    font-size: 34px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#backend-person-form2 .panel-tit-txt {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 15px;
+}
+
+#backend-person-form2 .content-table{
+    width: 100%;
+    margin-bottom: 29px;
+}
+
+#backend-person-form2 .content-table tr {
+    height: 39px;
+}
+
+#backend-person-form2 .content-table td.td1 {
+    background: none;
+    text-align: right;
+}
+#backend-person-form2 .content-table tr td:nth-child(2n-1) {
+    background: #edf2f6 !important;
+}
+
+#backend-person-form2 .content-table td, .siteMore_2_conTable2 td {
+    padding: 0 12px;
+    border: 1px solid #e2e2e2;
+}
+
+#backend-person-form2 .content-table tr td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#backend-person-form2 .content-table tr td input {
+    border: none;
+ }
+ #backend-person-form2 .content-table tr td input:focus {
+    outline: none;
+ }
+
+
+
+
+/* usr-table start */
+
+#backend-person-form3 .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-person-form3 .container {
+        width: 973px !important;
+    }
+}
+
+#backend-person-form3 .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-person-form3 .panel-tit {
+    height: 40px;
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    padding-left: 0;
+    /* margin-bottom: 20px; */
+}
+#backend-person-form3 .panel-tit-btn {
+    color: #3d88c2;
+    font-size: 34px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+#backend-person-form3 .panel-tit-txt {
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 15px;
+}
+
+#backend-person-form3 .content-table{
+    width: 100%;
+    margin-bottom: 29px;
+}
+
+#backend-person-form3 .content-table tr {
+    height: 39px;
+}
+
+#backend-person-form3 .content-table td.td1 {
+    background: none;
+    text-align: right;
+}
+#backend-person-form3 .content-table tr td:nth-child(2n-1) {
+    background: #edf2f6 !important;
+}
+
+#backend-person-form3 .content-table td {
+    padding: 0 12px;
+    border: 1px solid #e2e2e2;
+}
+
+#backend-person-form3 .content-table tr td {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#backend-person-form3 .content-table tr td input {
+    border: none;
+ }
+ #backend-person-form3 .content-table tr td input:focus {
+    outline: none;
+ }
+
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+em {
+    font-style: normal;
+}
+
+.personal-btn {
+    width: 70px;
+    height: 26px;
+    background-color: #3d88c2;
+    border-radius: 3px;
+    margin-right: 52px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 3px;
+}
+.personal-btn:hover,.personal-btn:focus {
+    color: #fff;
+}
+
+
+.personal-image1 {
+    width: 12px;
+    height: 2px;
+    background: url(../img/personal-panel-tit1.png) center left no-repeat;
+}
+
+.personal-image2 {
+    width: 12px;
+    height: 2px;
+    background: url(../img/personal-panel-tit2.png) center left no-repeat;
+}

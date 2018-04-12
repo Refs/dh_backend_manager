@@ -1,0 +1,317 @@
+/* 基础版面部分 */
+
+
+/* ************************************************************* */
+
+
+
+
+#dh-backend {
+    min-width: 100%;
+    position: absolute;
+    background: #eff3f6 bottom;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+/* ********************************************************************** */
+
+
+/* ## chart部分 */
+
+
+/* > 控制页面布局 大于973时 百分比自适应 缩放到一定程度 固定宽度；  */
+
+#backend-home-chart .container {
+    width: 100% !important;
+    padding: 0px;
+    /* margin-right:20px; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-home-chart .container {
+        width: 973px !important;
+        /* padding-right: 10%; */
+    }
+}
+
+
+/* > 控制panel与panel之间的间距 */
+
+#backend-home-chart .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-home-chart .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-home-chart .container .panel .panel-body {}
+
+
+/* ********************************************************** */
+
+
+/* st-info部分 */
+
+#backend-home-st-info .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-home-st-info .container {
+        width: 973px !important;
+    }
+}
+
+#backend-home-st-info .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-home-st-info .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-home-st-info .container .panel .panel-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#backend-home-st-info .container .panel .panel-body .col-xs-3 {
+    width: 23%;
+}
+
+
+
+#backend-home-st-info .container .panel .panel-body .block {
+    height: 94px;
+    /* width: 270px; */
+    /* background-color: red; */
+    margin-left: 1%;
+    margin-right: 1%;
+    /* padding: 0px 75px; */
+    padding-left: 60px;
+}
+
+#backend-home-st-info .container .panel .panel-body .block div {
+    margin-top: 14px;
+    height: 46px;
+    padding-left: 52px;
+    margin-bottom: 4px;
+    /* width: 20%; */
+}
+
+#backend-home-st-info .container .panel .panel-body .block div .info-first {
+    margin-bottom: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+#backend-home-st-info .container .panel .panel-body .block div .info-second {
+    margin-bottom: 0px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#backend-home-st-info .container .panel .panel-body .block p {
+    color: white;
+    font-size: 12px;
+    /* font-weight: bold; */
+}
+
+#backend-home-st-info .container .panel .panel-body .blue {
+    background-color: #168CE6;
+}
+
+#backend-home-st-info .container .panel .panel-body .blue div {
+    background: url(../img/home-st-info-blue.jpg) left no-repeat #168CE6;
+}
+
+#backend-home-st-info .container .panel .panel-body .red {
+    background-color: #F9683C;
+}
+
+#backend-home-st-info .container .panel .panel-body .red div {
+    background: url(../img/home-st-info-red.jpg) left no-repeat #F9683C;
+}
+
+#backend-home-st-info .container .panel .panel-body .purple {
+    background-color: #AD8DFC;
+}
+
+#backend-home-st-info .container .panel .panel-body .purple div {
+    background: url(../img/home-st-info-purple.jpg) left no-repeat #AD8DFC;
+}
+
+#backend-home-st-info .container .panel .panel-body .green {
+    background-color: #61BD2C;
+}
+
+#backend-home-st-info .container .panel .panel-body .green div {
+    background: url(../img/home-st-info-green.jpg) left no-repeat #61BD2C;
+}
+
+
+/* ************************************************************************** */
+
+
+/* home-app start */
+
+#backend-home-app .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-home-app .container {
+        width: 973px !important;
+    }
+}
+
+#backend-home-app .container .row{
+    margin:0px;
+}
+
+#backend-home-app .container .row .col-xs-6{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 49.75%;
+}
+
+#backend-home-app .container .panel {
+    margin-bottom: 2px;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+   
+  
+}
+#backend-home-app .container .panel.left {
+      margin-right: 0.5%;
+}
+
+#backend-home-app .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-home-app .container .panel .panel-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#backend-home-app .container .panel .panel-body ul {
+    margin: 0px;
+    
+}
+
+#backend-home-app .container .panel .panel-body ul li{
+    /* height: 60px; */
+}
+#backend-home-app .container .panel .panel-body ul li a{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: black;
+    font-size: 13px;
+    font-weight: 550px;
+}
+
+#backend-home-app .container .panel .panel-body.home-app-breakdown ul {
+    padding-left: 155px;
+}
+#backend-home-app .container .panel .panel-body.home-app-breakdown ul li.first{
+    margin-right: 20px;
+    position: relative;
+    top: 6px;
+}
+#backend-home-app .container .panel .panel-body.home-app-breakdown ul li.first a{
+    /* line-height: 30px; */
+}
+#backend-home-app .container .panel .panel-body.home-app-breakdown ul li.first a span{
+    color: orange;
+    font-size: 30px;
+}
+
+#backend-home-app .container .panel .panel-body.home-app-breakdown ul li a span{
+    color: orange;
+}
+#backend-home-app .container .panel .panel-body.home-app-exprience ul {
+    padding-left: 220px;
+}
+
+#backend-home-app .container .panel .panel-body.home-app-exprience ul li.first{
+    position: relative;
+    top: 2px;
+    left: -10px;
+}
+#backend-home-app .container .panel .panel-body.home-app-exprience ul li.first a span{
+    color: green;
+    font-size: 38px;
+}
+
+
+/* home-app end */
+
+/* ***************************************************** */
+
+/* home-guide start */
+#backend-home-guide .container {
+    width: 100% !important;
+    padding: 0px;
+    /* padding-right:5%; */
+    padding-right: 10px;
+}
+
+@media (max-width: 973px) {
+    #backend-home-guide .container {
+        width: 973px !important;
+    }
+}
+
+#backend-home-guide .container .panel {
+    margin-bottom: 2px;
+}
+
+#backend-home-guide .container .panel .panel-heading {
+    color: #777;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#backend-home-guide .container .panel .panel-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#backend-home-guide .container .panel .panel-body .media-body{
+    padding-top: 18px;
+}
+
+#backend-home-guide .container .panel .panel-body .media-body p{
+    margin-bottom: 0px;
+}
+
+#backend-home-guide .container .panel .panel-body .media-body .media-heading {
+    color: orange;
+    font-weight: 600;
+}
+
+
+/* home-guide end */

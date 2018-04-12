@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>大恒光伏鹰眼后台管理</title>
+	<!-- Bootstrap -->
+	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!-- hack -->
+	<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+	<!-- 导入 自己的css -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!-- 导入 index.css -->
+	<link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+	<link rel="stylesheet" type="text/css" href="./css/backend-char.css" />
+</head>
+
+<body>
+	<div id="monitor_wd_show">
+		<div>
+			<label class="monitor_show_info">id：</label>
+			<label id="monitor_show_info_wd_id">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">名称：</label>
+			<label id="monitor_show_info_wd_name">238957395834795</label>
+		</div>
+	</div>
+
+	<div id="monitor_show">
+		<div>
+			<label class="monitor_show_info">id：</label>
+			<label id="monitor_show_info_id">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">序列号：</label>
+			<label id="monitor_show_info_xlh">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">功&nbsp;率：</label>
+			<label id="monitor_show_info_gl">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">电&nbsp;压：</label>
+			<label id="monitor_show_info_dy">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">电&nbsp;流：</label>
+			<label id="monitor_show_info_dl">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">温&nbsp;度：</label>
+			<label id="monitor_show_info_wd">238957395834795</label>
+		</div>
+		<div>
+			<label class="monitor_show_info">累计发电量：</label>
+			<label id="monitor_show_info_ljfd">238957395834795</label>
+		</div>
+	</div>
+
+
+	<div class="monitor_top">组件监控图</div>
+
+	<div class="monitor_choose clearfix">
+		<div class="form1 pull-left">
+			<label>屋顶</label>
+			<select class="dh-form-control " id="monitor_wd_select" onchange="changeSelect()">
+				<option value="1">屋顶分布图</option>
+				<option value="2">庐阳管理大楼屋顶</option>
+				<option value="3">庐阳管理大楼屋顶</option>
+			</select>
+		</div>
+		<div class="form2 pull-left">
+			<label>查询</label>
+			<select class="dh-form-control">
+				<option>功率</option>
+				<option>功率</option>
+				<option>功率</option>
+			</select>
+		</div>
+	</div>
+
+
+	<div class="monitor_choose_content clearfix">
+		<div class="monitor_choose_content_left">
+			<ul class=" list-unstyled">
+				<li class="monitor_left_li first ">
+					<span class="dh-font dh-icon-test"></span>
+					<p>逆变器</p>
+				</li>
+				<li class="monitor_left_li ">
+					<span class="dh-font dh-icon-test1"></span>
+					<p>汇流箱</p>
+				</li>
+				<li class="monitor_left_li ">
+					<span class="dh-font dh-dianbiaoliebiao"></span>
+					<p>电表</p>
+				</li>
+				<li class="monitor_left_li ">
+					<span class="dh-font dh-zujian"></span>
+					<p>组件</p>
+				</li>
+				<li class="monitor_left_li ">
+					<span class="dh-font dh-qixiangzhan"></span>
+					<p>气象</p>
+				</li>
+				<li class="monitor_left_li ">
+					<span class="dh-font dh-fenbulei"></span>
+					<p>整体分布</p>
+				</li>
+			</ul>
+		</div>
+		<div class="monitor_choose_content_data" id="monitor_data1" onclick="chooseNone()">
+			<div class="monitor_choose_content_data2" id="monitor_data2"></div>
+		</div>
+		<div class="monitor_choose_content_right">
+			<table class="monitor_right_ul" id="monitor_right_ul"></table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div id="hehe"></div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/backend-char.js"></script>

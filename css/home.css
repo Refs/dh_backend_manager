@@ -1,0 +1,152 @@
+/* ## navbar部分 */
+/* ********************************************************************** */
+
+#dh-backend-nav .navbar {
+    margin-bottom: 0px !important;
+}
+
+#dh-backend-nav .navbar-default {
+    background-color: #004983;
+}
+
+#dh-backend-nav .navbar-default .navbar-nav>li>a{
+    color: white;
+}
+
+/* > 控制导航条折叠将其阈值调到 420px 以后若有bug还可以继续调低 */
+
+@media (max-width: 120px) {
+    #dh-backend-nav .navbar-collapse .nav>.divider-vertical {
+        display: none;
+    }
+}
+
+
+/*Defining the vertical dividers*/
+
+#dh-backend-nav .navbar .divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #DADADA;
+}
+
+#dh-backend-nav .navbar-inverse .divider-vertical {
+    border-right-color: #222222;
+    border-left-color: #111111;
+}
+
+@media only screen and (min-width: 420px) {
+    #dh-backend-nav .collapse {
+        display: block;
+    }
+    #dh-backend-nav .navbar-header {
+        float: left;
+    }
+    #dh-backend-nav .navbar-toggle {
+        display: none;
+    }
+    #dh-backend-nav .navbar-nav {
+        float: left;
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #dh-backend-nav .navbar-nav>li {
+        float: left;
+    }
+    #dh-backend-nav .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #dh-backend-nav .navbar-right {
+        float: right!important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #dh-backend-nav .collapse {
+        display: none;
+    }
+    #dh-backend-nav .navbar-header {
+        display: block;
+    }
+}
+
+
+/* > 控制版心居中 且宽度定在1170px */
+
+#dh-backend-nav .container {
+    width: 1170px !important;
+    padding: 0px !important;
+}
+
+
+/* > 调整导航条的高度 */
+
+#dh-backend-nav .navbar-nav>li>a,
+#dh-backend-nav .navbar-brand {
+    padding-top: 5px !important;
+    padding-bottom: 0 !important;
+    height: 30px;
+}
+
+#dh-backend-nav .navbar {
+    min-height: 30px !important;
+}
+
+
+/* > 调整body的padding-top值使其与navbar的高度一致*/
+
+body {
+    padding-top: 40px;
+    /* 用来调试滚动条 */
+    height: 1500px;
+}
+
+/* ************************************************************************************* */
+/* ## jumbotron部分 */
+
+
+/* > 控制版心居中 且宽度定在1170px  */
+
+#dh-backend-jumbotron .container {
+    width: 1170px !important;
+    position: relative;
+}
+
+
+/* > 更改背景图片  放稳尺寸*/
+
+#dh-backend-jumbotron .jumbotron {
+    background-color: #FFFFFF;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 70px;
+}
+
+
+/* > 添加logo链接 */
+
+#dh-backend-jumbotron .jumbotron .logo {
+    float: left;
+    /* display: block; */
+    height: 70px;
+    width: 180px;
+    background: url(../img/home-jumbotron-logo-background.png) center no-repeat;
+    /* margin-left: */
+}
+#dh-backend-jumbotron .jumbotron .jumbotron-background {
+    position: absolute;
+    top: 7%;
+    margin-top: -35px;
+    left: 160px;
+    float: left;
+    height: 70px;
+    width: 810px;
+    background: url(../img/home-jumbotron-background.png) center no-repeat;
+}
+
+/* ********************************************************************** */
+

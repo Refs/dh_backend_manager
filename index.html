@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link href="lib/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+	<script src="./lib/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function resizeIframe(obj) {
+			obj.style.height = 0;
+			try {
+				var bHeight = obj.contentWindow.document.body.scrollHeight;
+				var dHeight = obj.contentWindow.document.documentElement.scrollHeight;
+				var height = Math.max(bHeight, dHeight);
+				//set the least height value
+				height = height >= 738 ? height : 738;
+				obj.style.height = height + 'px';
+			} catch (ex) {}
+			//    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		}
+	</script>
+</head>
+
+<body>
+	<!-- backend-nav start -->
+	<div id="dh-backend-nav">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					    aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+					<div class="nav-control">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" role="button" aria-haspopup="true"
+								    aria-expanded="false">中国大陆
+									<span class="dh-font dh-xiala"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<!--  -->
+										<a href="#" target="rightFrame">美国</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">日本</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">意大利</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">艾泽拉斯</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" role="button" aria-haspopup="true"
+								    aria-expanded="false">1234567890
+									<span class="dh-font dh-xiala"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" target="rightFrame">电话1</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">电话2</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">电话3</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown ">
+
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" role="button" aria-haspopup="true"
+								    aria-expanded="false">
+									<span class="dh-font dh-xiaoxi"></span>massage
+									<span class="dh-font dh-xiala"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#" target="rightFrame">您有新的短消息</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">您还有新的短消息</a>
+									</li>
+									<li>
+										<a href="#" target="rightFrame">您必须有新的短消息</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#" target="rightFrame">
+									<span class="dh-font dh-guzhang1" style="color:red"></span>故障</a>
+							</li>
+							<li>
+								<!-- <a class="menu-item menu-item-active " href="./_backend_tables_home.html" target="iframecon"> -->
+								<a href="#" id="personalCenterBTN" target="rightFrame">
+									<span class="dh-font dh-gerenzhongxin"></span>个人中心</a>
+							</li>
+							<li>
+								<a href="#" target="rightFrame">
+									<span class="dh-font dh-tuichu1"></span>退出</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</div>
+	<!-- backend-nav end-->
+
+	<!-- dh-jumbotron start -->
+	<div id="dh-backend-jumbotron">
+		<div class="jumbotron">
+			<div class="container-fluid">
+				<a href="#" class="logo"></a>
+				<div class="jumbotron-background">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- dh-jumbotron end -->
+	<!-- dh-left-menu start -->
+	<div id="dh-backend-menu">
+		<div class="leftmenu">
+			<a class="menu-item menu-item-active " href="./_backend_tables_home.html" target="iframecon">
+				<span class="dh-font dh-shouye"></span>
+				<p>首页</p>
+			</a>
+			<a class="menu-item menu-item-char" href="./_backend_tables_char.html" target="iframecon">
+				<span class="dh-font dh-EPCzuodaohangtubiao-"></span>
+				<p>监控图</p>
+			</a>
+			<a class="menu-item" href="./_backend_tables_user.html" target="iframecon">
+				<span class="dh-font dh-renyuanguanli"></span>
+				<p>人员管理</p>
+			</a>
+			<a class="menu-item " href="./_backend_tables_chan.html" target="iframecon">
+				<span class="dh-font dh-tongji"></span>
+				<p>电站统计</p>
+			</a>
+			<a class="menu-item" href="./_backend_tables_scho.html" target="iframecon">
+				<span class="dh-font dh-dianzhan1"></span>
+				<p>电站管理</p>
+			</a>
+			<a class="menu-item" href="./_backend_tables_map.html" target="iframecon">
+				<span class="dh-font dh-earth"></span>
+				<p>地图</p>
+			</a>
+			<a class="menu-item " href="./_backend_tables_regu.html" target="iframecon">
+				<span class="dh-font dh-guzhang1"></span>
+				<p>故障</p>
+			</a>
+			<a class="menu-item " href="./_backend_tables_stud.html" target="iframecon">
+				<span class="dh-font dh-fenxi"></span>
+				<p>智能分析</p>
+			</a>
+			<a class="menu-item" href="./_backend_tables_sitt.html" target="iframecon">
+				<span class="dh-font dh-yijianfankui"></span>
+				<p>意见反馈</p>
+			</a>
+			<a class="menu-item" href="./_backend_tables_data.html" target="iframecon">
+				<span class="dh-font dh-tuichu1"></span>
+				<p>电站报表</p>
+			</a>
+		</div>
+	</div>
+	<!-- dh-left-menu end -->
+
+	<!-- dh-affix start -->
+	<div id="dh-backend-affix">
+		<div class="rightaffix">
+			<!-- right-affix -->
+			<button class="btn btn-success btn-xs affix-item affix-item-button " data-toggle="modal" data-target="#affix-search">
+				<span class="dh-font dh-icon"></span>
+				<p>搜索</p>
+			</button>
+			<button class="btn btn-success btn-xs affix-item affix-item-button" data-toggle="modal" data-target="#affix-wechat">
+				<span class="dh-font dh-erweima"></span>
+				<p>二维码</p>
+			</button>
+			<!-- </button> -->
+			<a class="affix-item" href="./_backend_tables_constructor.html" target="_blank">
+				<span class="dh-font dh-chuangjian"></span>
+				<p>创建</p>
+			</a>
+		</div>
+	</div>
+	<!-- dh-affix end -->
+	
+	<!-- search-modal start -->
+	<div class="modal fade" id="affix-search" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">搜索电站</h4>
+				</div>
+				<div class="modal-body">
+
+					<!-- search start -->
+					<div class="modal-search">
+						<div class="search-div">
+							<div class="search-div-in">
+								<input type="text" class="u-search" id="u-searchID" value="&#20809;&#20239;" name="q" autocomplete="off" placeholder="点击搜索电站">
+								<i class="dh-font dh-quxiao" id="dh-quxiaoID" onclick='document.getElementById("u-searchID").value="";'></i>
+							</div>
+						</div>
+						<div class="btns">
+							<input type="button" id="researchBtn" class="Js_reSearch research" value="二次检索">
+							<button class="search-btn">
+								<i class="dh-font dh-icon"></i>
+							</button>
+						</div>
+					</div>
+					<!-- search end -->
+
+					<!-- research start -->
+					<div class="modal-research">
+						<div class="Js_reSearch_div research_div" id="research_divID">
+							<div class="research_div_in">
+								<ul class="select">
+									<li class="select-list">
+										<dl id="select1">
+											<dt> 电站种类：</dt>
+											<dd class="select-all selected">
+												<a href="#">全部</a>
+											</dd>
+											<dd>
+												<a href="#">集团电站</a>
+											</dd>
+											<dd>
+												<a href="#">经销商电站</a>
+											</dd>
+										</dl>
+									</li>
+									<li class="select-list">
+										<dl id="select2">
+											<dt>电站状态：</dt>
+											<dd class="select-all selected">
+												<a href="#">全部</a>
+											</dd>
+											<dd>
+												<a href="#">建成</a>
+											</dd>
+											<dd>
+												<a href="#">在建</a>
+											</dd>
+											<dd>
+												<a href="#">停用</a>
+											</dd>
+										</dl>
+									</li>
+									<li class="select-list">
+										<dl id="select3">
+											<dt>地点：</dt>
+											<dd class="select-all selected">
+												<a href="#">全部</a>
+											</dd>
+											<dd>
+												<a href="#">安徽</a>
+											</dd>
+											<dd>
+												<a href="#">北京</a>
+											</dd>
+											<dd>
+												<a href="#">上海</a>
+											</dd>
+										</dl>
+									</li>
+									<li class="select-list">
+										<dl id="select4">
+											<dt>功率段选项：</dt>
+											<dd class="select-all selected">
+												<a href="#">全部</a>
+											</dd>
+											<dd>
+												<a href="#">5KW以下</a>
+											</dd>
+											<dd>
+												<a href="#">5KW--20KW</a>
+											</dd>
+											<dd>
+												<a href="#">20KW--500KW</a>
+											</dd>
+											<dd>
+												<a href="#">500KW以上</a>
+											</dd>
+										</dl>
+									</li>
+
+									<li class="select-result">
+										<dl>
+											<dt>已选条件：</dt>
+
+											<dd class="select-no">暂时没有选择过滤条件</dd>
+										</dl>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<!-- research end -->
+					
+					<!-- table start -->
+					<div class="modal-table">
+						<table class="table table-striped table-hover">
+							<caption>电站搜索结果</caption>
+							<thead>
+								<tr>
+									<th>序号</th>
+									<th>名称</th>
+									<th>功率</th>
+									<th>地址</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>刘冰清</td>
+									<td>8KW</td>
+									<td>合肥大蜀山高科工业园</td>
+									<td>
+										<a href="#">查看</a>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>杨慕云</td>
+									<td>8KW</td>
+									<td>合肥大蜀山高科工业园</td>
+									<td>
+										<a href="#">查看</a>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>上官如渊</td>
+									<td>8KW</td>
+									<td>合肥大蜀山高科工业园</td>
+									<td>
+										<a href="#">查看</a>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>南柯梦</td>
+									<td>8KW</td>
+									<td>合肥大蜀山高科工业园</td>
+									<td>
+										<a href="#">查看</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- table end -->
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- search-modal end -->
+
+	<!-- wechat-modal start -->
+	<div class="modal fade" id="affix-wechat" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">请添加企业微信二维码</h4>
+				</div>
+				<div class="modal-body">
+					<div class="modal-wechat">
+
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- wechat-modal end -->
+	<!-- dh-affix end -->
+
+	<!-- dh-right-content -->
+	<div id="dh-backend-content">
+		<iframe src="./_backend_tables_home.html" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" width="100%" id="iframecon"
+		    name="iframecon" onload="resizeIframe(this)"></iframe>
+	</div>
+	<!-- dh-right-end -->
+
+
+	<!-- user-st-auth-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="user-st-auth">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body"  style="max-height:300px; overflow-y: auto;">
+					<div class="row">
+						<div id="user-optional-st" class="col-xs-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">可选电站</div>
+								<div class="panel-body">
+									<ul>
+										<li>
+											王林电站
+										</li>
+										<li>
+											时雨名电站
+										</li>
+										<li>
+											张锋电站
+										</li>
+										<li>
+											李纲电站
+										</li>
+										<li>
+											王林电站
+										</li>
+		
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+						<div id="user-selected-st" class="col-xs-6">
+							<div class="panel panel-default">
+								<div class="panel-heading">已选电站</div>
+								<div class="panel-body">
+									<ul>
+										<li>
+											张成电站
+										</li>
+										<li>
+											李华电站
+										</li>
+										<li>
+											张丽电站
+										</li>
+										<li>
+											刘明电站
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- user-st-auth-modal end -->
+
+	<!-- user-func-auth-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="user-func-auth">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<ul id="user-func-list">
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 首页
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 监控图
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 人员管理
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 电站统计
+							<ul>
+								<li>
+									<i class="dh-font dh-xiala"></i>
+									<input type="checkbox" name="" /> 发电量
+								</li>
+								<li>
+									<i class="dh-font dh-xiala"></i>
+									<input type="checkbox" name="" /> 等效小时
+								</li>
+							</ul>
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 故障
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 智能分析
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 意见反馈
+						</li>
+						<li>
+							<i class="dh-font dh-xiala"></i>
+							<input type="checkbox" name="" /> 系统配置
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- user-func-auth-modal end -->
+
+	<!-- user-add-person-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="user-add">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">添加人员</h4>
+				</div>
+				<div class="modal-body">
+					<div id="user-add-form">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="user-name" class="col-sm-2 control-label">姓名</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="user-name" placeholder="name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-call" class="col-sm-2 control-label">联系方式</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="user-call" placeholder="tel-number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-char" class="col-sm-2 control-label">角色</label>
+								<select class="form-control col-sm-10" id="user-char">
+									<option>工作人员</option>
+									<option>运维人员</option>
+									<option>经销商管理员</option>
+									<option>集团管理员</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- user-add-person-modal end -->
+
+
+	<!-- conf-info-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="conf-info">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">系统设置授权</h4>
+				</div>
+				<div class="modal-body">
+					<div id="conf-info-form">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="user-name" class="col-sm-2 control-label">预警温度</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="user-name" placeholder="temperature">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-call" class="col-sm-2 control-label">客服电话</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="user-call" placeholder="tel-number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-call" class="col-sm-2 control-label">客服邮箱</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="user-call" placeholder="E-mail">
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存设置</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- conf-info-modal end -->
+
+	<!-- conf-app-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="conf-app">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">APP版本上传</h4>
+				</div>
+				<div class="modal-body">
+					<div id="conf-app-form">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="user-name" class="col-sm-2 control-label">版本号</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" placeholder="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-call" class="col-sm-2 control-label">APP种类</label>
+								<div class="col-sm-10">
+									<select class="form-control">
+										<option>android</option>
+										<option>ios</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="user-call" class="col-sm-2 control-label">更新信息</label>
+								<div class="col-sm-10">
+									<textarea class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存上传</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- conf-app-modal end -->
+
+	<!-- regu-solution-modal start -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="regu-solution">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">处理意见</h4>
+				</div>
+				<div class="modal-body">
+					<textarea class=" form-control" rows="5"></textarea>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+	<!-- regu-solution-modal end -->
+
+	<!-- templete container start -->
+	<div style="position:absolute;left:-9999px">
+		<input type="text" id="myAnchor" value="30hellow">
+	</div>
+	<!-- templete container end -->
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script src="./js/twitter-bootstrap-hover-dropdown.min.js"></script>
+<script src="./js/jquery.collapsibleCheckboxTree.js"></script>
+
+<script language="javascript">
+	function getIframeParameter(string) {
+		var name = string;
+		document.getElementById('myAnchor').value = name;
+	}
+</script>
+
+
+<!-- personal center start -->
+<script>
+	// 屏蔽a的默认行为
+	$('a[href="#"]').click(function (e) {
+		e.preventDefault ? e.preventDefault() : e.returnValue = false;
+	});
+	// 点击后更改iframe的attr值；
+	$('#personalCenterBTN').click(function () {
+		$('#dh-backend-content iframe').attr('src', './_backend_tables_personal.html')
+		$(".menu-item").removeClass("menu-item-active");
+	})
+	// 移除menu的active类；
+</script>
+<!-- personal center end -->
+
+
+
+<script>
+	// *************************************************
+	// user-modal-control start
+	$('#user-st-auth').on('show.bs.modal', function (event) {
+		var recipient = $('#myAnchor').val();
+		var modal = $(this);
+		modal.find('.modal-title').text('电站授权 ——' + recipient);
+	})
+	$('#user-func-auth').on('show.bs.modal', function (event) {
+		var recipient = $('#myAnchor').val();
+		var modal = $(this);
+		modal.find('.modal-title').text('功能授权 ——' + recipient);
+	})
+	$('#user-optional-st').on('click', 'li', function () {
+		$('#user-selected-st ul').append($(this));
+	})
+	$('#user-selected-st').on('click', 'li', function () {
+		$('#user-optional-st ul').append($(this));
+	})
+
+	$('ul#user-func-list').collapsibleCheckboxTree({
+		includeButtons: false,
+		checkParents: true
+	});
+
+	// user-modal-control end
+	// **********************************************************
+</script>
+
+
+
+
+<script>
+	$(function () {
+		// ***********************************************************************
+		// home-affix-modal-control start
+		//right-item start
+		$(".affix-item").click(function () {
+			$(".affix-item").removeClass("affix-item-active");
+			$(this).addClass("affix-item-active"); 
+			window.setTimeout(function () {
+				$(".affix-item").removeClass("affix-item-active");
+			}, 2000);   
+		});
+
+		// left-item start
+		$(".menu-item").click(function () {
+			$(".menu-item").removeClass("menu-item-active");
+			$(this).addClass("menu-item-active");    
+		}); 
+
+		// modal-search start
+		$('#researchBtn').click(function (event) {
+			$('#research_divID').toggle();
+			event.stopPropagation(); 
+		})
+		$(document).click(function () {   
+			$('#research_divID').hide();  
+		});
+		$('#research_divID').click(function (event) {  
+			event.stopPropagation();  
+		});
+		$('#u-searchID').click(function (event) {  
+			event.stopPropagation();  
+		});
+		$('#dh-quxiaoID').click(function (event) {  
+			event.stopPropagation();  
+		});
+
+		// modal-research-pane start
+		$("#select1 dd").click(function () {
+			$(this).addClass("selected").siblings().removeClass("selected");
+			if ($(this).hasClass("select-all")) {
+				$("#selectA").remove();
+			} else {
+				var copyThisA = $(this).clone();
+				if ($("#selectA").length > 0) {
+					$("#selectA a").html($(this).text());
+				} else {
+					$(".select-result dl").append(copyThisA.attr("id", "selectA"));
+				}
+			}
+		});
+
+		$("#select2 dd").click(function () {
+			$(this).addClass("selected").siblings().removeClass("selected");
+			if ($(this).hasClass("select-all")) {
+				$("#selectB").remove();
+			} else {
+				var copyThisB = $(this).clone();
+				if ($("#selectB").length > 0) {
+					$("#selectB a").html($(this).text());
+				} else {
+					$(".select-result dl").append(copyThisB.attr("id", "selectB"));
+				}
+			}
+		});
+
+		$("#select3 dd").click(function () {
+			$(this).addClass("selected").siblings().removeClass("selected");
+			if ($(this).hasClass("select-all")) {
+				$("#selectC").remove();
+			} else {
+				var copyThisC = $(this).clone();
+				if ($("#selectC").length > 0) {
+					$("#selectC a").html($(this).text());
+				} else {
+					$(".select-result dl").append(copyThisC.attr("id", "selectC"));
+				}
+			}
+		});
+		$("#select4 dd").click(function () {
+			$(this).addClass("selected").siblings().removeClass("selected");
+			if ($(this).hasClass("select-all")) {
+				$("#selectD").remove();
+			} else {
+				var copyThisC = $(this).clone();
+				if ($("#selectD").length > 0) {
+					$("#selectD a").html($(this).text());
+				} else {
+					$(".select-result dl").append(copyThisC.attr("id", "selectD"));
+				}
+			}
+		});
+		// click selected elements 
+		$(".select-result dl").on("click", "#selectA", function () {
+			$(this).remove();
+			$("#select1 .select-all").addClass("selected").siblings().removeClass("selected");
+		});
+
+		$(".select-result dl").on("click", "#selectB", function () {
+			$(this).remove();
+			$("#select2 .select-all").addClass("selected").siblings().removeClass("selected");
+		});
+
+		$(".select-result dl").on("click", "#selectC", function () {
+			$(this).remove();
+			$("#select3 .select-all").addClass("selected").siblings().removeClass("selected");
+		});
+
+		$(".select-result dl").on("click", "#selectD", function () {
+			$(this).remove();
+			$("#select4 .select-all").addClass("selected").siblings().removeClass("selected");
+		});
+
+		//  control select-no
+		$(".select dd").bind("click", function () {
+			if ($(".select-result dd").length > 1) {
+				$(".select-no").hide();
+			} else {
+				$(".select-no").show();
+			}
+		});
+	})
+	// home-affix-modal-control end
+	// *********************************************************************************
+</script>

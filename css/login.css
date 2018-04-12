@@ -1,0 +1,259 @@
+body{background: url(../img/login-background.png) no-repeat center fixed;
+    background-size: cover;
+    font-size: 16px;
+    /* ***去除滚动条** */
+    overflow-x: hidden;  
+    overflow-y: hidden; 
+    }
+
+/* *************************************************** */
+
+#dh-login{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+@media (max-width: 1123px) {
+    #dh-login {
+        min-width: 973px !important;
+    }
+}
+#dh-login .logo{
+    position: absolute;
+    top: 37px;
+    left: 51px;
+    width: 124px;
+    height: 26px;
+    background: url(../img/dh-logo.png) center no-repeat;
+}
+
+/* 微信公众号 */
+#dh-login .wechat{
+    position: absolute;
+    top: 480px;
+    left: 140px;
+    width: 465px;
+    height: 114px;
+    background: url(../img/wechat.png)  center no-repeat;
+}
+
+#dh-login .language{
+   position: absolute;
+   top: 70px;
+   right: 83px;
+   width: 58px;
+   /* height: 16px; */
+ 
+}
+#dh-login .language .chinese{
+    float: left;
+    height: 16px;
+    width: 24px;
+    background: url(../img/chinese.png)  center no-repeat;
+}
+#dh-login .language .american{
+    float: right;
+    height: 16px;
+    width: 24px;
+    background: url(../img/american.png)  center no-repeat;
+}
+
+#dh-login .form{
+    position: absolute;
+    top:-70px;
+    left: 30px;
+    /* 利用ps吸取的为白色 */
+    background: rgb(252, 251, 251);
+    width:400px;
+    height: 285px;
+    margin-top:300px;
+    /* 用来层叠掉col在不同尺寸下的样式，不同会造成盒子的跳动；而我们一是不能将col去掉因为会影响布局；二是不能修改原生的bootstrap,所以只能将其层叠掉； */
+    margin-left: 58.33333333% !important;
+}
+
+
+
+#dh-login .form-title {
+    margin-top: 25px;
+    height: 42px;
+    background: url(../img/login-logo.fw.png)  center no-repeat;
+}
+/* ************************************* */
+
+
+
+
+/* 更改input框的样式  不同的尺寸需求不同**************************************/
+#dh-login .dh_form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: 15px;
+    margin-bottom: -10px;
+    padding: 0px;
+}
+@media (min-width: 768px) { 
+    #dh-login .dh_form-horizontal .form-group {
+    margin-right: -62px;
+    margin-left: -81px;
+    }
+}
+
+#dh-login .dh_form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    /* padding: 6px 0px; */
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    /* border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; */
+    border: none;
+    border-bottom:1px solid rgb(102, 95, 95);
+   
+  }
+  /* 被点击时 下划线的颜色 */
+  #dh-login .dh_form-control:focus {
+    /* border-color: red; */
+    outline: 0;
+    /* 去除点击时外部的边框 */
+    /* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+            box-shadow: inset 0 1px 1px rgba(172, 7, 7, 0.075), 0 0 8px rgba(8, 128, 219, 0.6); */
+  }
+  /* 下面这一部分是用来控制input标签内的元素的 颜色应该与下划线去保持一致 */
+  #dh-login .dh_form-control::-moz-placeholder {
+    color: rgb(114, 108, 108);
+    opacity: 1;
+    text-align: left;
+    font-weight: bold;
+  }
+  #dh-login .dh_form-control:-ms-input-placeholder {
+    color: rgb(114, 108, 108);
+    text-align: left;
+    font-weight: bold;
+  }
+  #dh-login .dh_form-control::-webkit-input-placeholder {
+    color: rgb(114, 108, 108);
+    text-align: left;
+    font-weight: bold;
+  }
+  #dh-login .dh_form-control[disabled],
+  #dh-login .dh_form-control[readonly],
+  fieldset[disabled] .dh_form-control {
+    background-color: #eee;
+    opacity: 1;
+  }
+  #dh-login .dh_form-control[disabled],
+  #dh-login fieldset[disabled] .dh_form-control {
+    cursor: not-allowed;
+  }
+
+  /* ******************************************** */
+
+  #dh-login #login_form{
+    display: block;
+    padding-right: 24px;
+}
+
+@media (min-width: 768px) { 
+    #dh-login   #login_form{
+        padding-right: 0px;
+    }
+ }
+
+ #dh-login #register_form{
+    display: none;
+}
+#dh-login .fa{
+    display: inline-block;
+    top: 27px;
+    left: 6px;
+    position: relative;
+    color: rgb(173, 38, 38);
+}
+/* 此处是用来设置输入框文字的 偏移量的，若自己加图片可以将此偏移量适当的设大一点 */
+#dh-login input[type="text"],#dh-login input[type="password"]{
+    padding-left:5px;
+}
+#dh-login .checkbox{
+    padding-left:21px;
+    float: left;
+}
+
+/* 清除浮动*/
+　.dh_clearfix:before,.dh_clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+}
+.dh_clearfix {
+        zoom: 1;
+}
+
+
+
+/* 处理倒数第二排 */
+#dh-login .dh_form-group{
+    margin-top: 23px;
+    margin-bottom: 11px !important;
+    font-size: 10px;
+}
+#dh-login .jizhu{
+    font-size: 10px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#dh-login .youke{
+    font-size: 10px;
+    line-height: 26px;
+    display: block;
+    color: #f69;
+    float: right;
+    /* 因为左边选框与文字不对齐，网上找方法解决后，右边的文字与左边的文字又不齐了，所以此时最好是将文字向上移一点，以使得左右对齐，利用margin-top */
+    margin-top: -4px;
+}
+/*  */
+
+/* 用来调整选框的上下位置，使其能与后面的文章对齐  采用的直接覆盖的方式*/
+#dh-login input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    vertical-align: middle;
+    margin-top: 1px;
+    margin-bottom: 1px !important;
+}
+/* 最后一个按钮 */
+#dh-login .dh_btn {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /* 修改字体大小 */
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    background-color: rgb(236, 108, 14);
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }

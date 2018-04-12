@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+</html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-scho.css">
+    <!-- <body > -->
+</head>
+
+<body>
+
+
+    <!-- backend   -->
+    <div id="dh-backend-scho">
+        <!-- backend-scho-form start -->
+        <div id="backend-scho-form">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">故障列表</div>
+                    <div class="panel-body">
+                        <div class="wrap clearfix">
+                            <div class="form1 pull-left">
+                                <label>电站</label>
+                                <select class="dh-form-control">
+                                    <option>全部</option>
+                                    <option>集团</option>
+                                    <option>经销商</option>
+                                </select>
+                            </div>
+                            <div class="form2 pull-left">
+                                <label>功率段</label>
+                                <input class="dh-form-control" type="text" placeholder="">&nbsp;~&nbsp;
+                                <input class="dh-form-control" type="text" placeholder="">
+                                <label>KW</label>
+                            </div>
+                            <div class="form3 pull-left">
+                                <input class="dh-form-control" type="text" placeholder="请输入搜索内容">
+                            </div>
+                            <div class="form4 pull-left">
+                                <button type="submit" class="btn btn-default">搜索</button>
+                            </div>
+                        </div>
+
+                        <table class="table table-bordered table-striped table-hover ">
+                            <thead>
+                                <tr>
+                                    <th> 展开</th>
+                                    <th>序号</th>
+                                    <th>电站名称</th>
+                                    <th>装机功率</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="slide-down" data-toggle="collapse" data-target="#collapseExample">
+                                        <span class="dh-font dh-xiala"></span>
+                                    </td>
+                                    <td>1</td>
+                                    <td>东城区333.0千瓦电站</td>
+                                    <td>8KW</td>
+                                    <td>建成</td>
+                                    <td>
+                                        <a href="#">查看</a>&nbsp;/
+                                        <a href="#">停用</a>&nbsp;/
+                                        <a href="#">下钻</a>
+                                    </td>
+                                </tr>
+                                <tr class="slide">
+                                    <td colspan="6" class="row">
+                                        <div class="col-xs-5">
+                                            <div class="row">
+                                                <div class="block blue col-xs-6">
+                                                    <div>
+                                                        <p class="info-first">当前功率</p>
+                                                        <p class="info-second">11.38万千瓦</p>
+                                                    </div>
+                                                    <p>装机功率&nbsp;88.52万千瓦</p>
+                                                </div>
+                                                <div class="block red col-xs-6">
+                                                    <div>
+                                                        <p class="info-first">当前功率</p>
+                                                        <p class="info-second">11.38万千瓦</p>
+                                                    </div>
+                                                    <p>装机功率&nbsp;88.52万千瓦</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="block purple col-xs-6">
+                                                    <div>
+                                                        <p class="info-first">当前功率</p>
+                                                        <p class="info-second">11.38万千瓦</p>
+                                                    </div>
+                                                    <p>装机功率&nbsp;88.52万千瓦</p>
+                                                </div>
+                                                <div class="block green col-xs-6">
+                                                    <div>
+                                                        <p class="info-first">当前功率</p>
+                                                        <p class="info-second">11.38万千瓦</p>
+                                                    </div>
+                                                    <p>装机功率&nbsp;88.52万千瓦</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5 block2" style="background-color:red"></div>
+                                        <div class="col-xs-2 block3">
+                                            <div class="xiazuan"></div>
+                                            <p>
+                                                <span>20</span>条故障</p>
+                                            <p>
+                                                <span>20</span>条告警</p>
+                                            <p>
+                                                <span>20</span>条提议</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- backend-scho-form end -->
+
+
+
+
+
+        </html>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="./lib/js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="./lib/js/bootstrap.min.js"></script>
+        <script>
+            $('a[href="#"]').click(function (e) {
+                e.preventDefault ? e.preventDefault() : e.returnValue = false;
+            });
+            // $('.collapseBTN').on('click', function (e) {
+            // console.log(e.currentTarget.parentNode);
+            // $(e.currentTarget.parentNode).css('background-color','red');
+            // $(e.currentTarget.parentNode).css('position','relative');
+            // $(e.currentTarget.parentNode).appendChild('#collapseExample');
+            // $('#collapseExample').css('position','absolute');
+            // $('#collapseExample').collapse('toggle');
+            // })
+            // $('#collapseExample').on('show.bs.collapse', function () {
+            //     $('#collapseExample').collapse('hide');
+            // })
+            $('.slide').hide();
+            $("tr").on("click","td.slide-down" ,function (e) {
+                $('.slide').show();
+                $(e.currentTarget).removeClass('slide-down');
+                $(e.currentTarget).addClass('slide-up');
+                $(e.currentTarget).parent('tr').next(".slide")
+                    .find('td')
+                    .wrapInner('<div class="aaa" style="display: none;" />').debugger()
+                    .parent()
+                    .find('td > div')
+                    .slideDown(700, function () {
+                        var $set = $(this);
+                        $set.replaceWith($set.contents());
+                    });
+            });
+            $("tr").on("click","td.slide-up" ,function (e) {
+                $(e.currentTarget).removeClass('slide-up');
+                $(e.currentTarget).addClass('slide-down');
+                 $(e.currentTarget).debugger().parent('tr').next(".slide")
+                    .find('td')
+                    .wrapInner('<div style="display: block;" />').debugger()
+                    .parent()
+                    .find('td > div')
+                    .slideUp(700, function () {
+                        var $set = $(this);
+                        $set.replaceWith($set.contents());
+                        $('.slide').hide();
+                    });
+            });
+
+
+            // $('#my_table > tbody > tr.my_row')
+            //     .find('td')
+            //     .wrapInner('<div style="display: none;" />')
+            //     .parent()
+            //     .find('td > div')
+            //     .slideDown(700, function () {
+            //         var $set = $(this);
+            //         $set.replaceWith($set.contents());
+            //     });
+
+            // $("tr.slide").on("click", function () {
+            //     $(this).slideToggle();
+            // });
+        </script>

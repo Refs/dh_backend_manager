@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>大恒光伏鹰眼后台管理</title>
+    <!-- Bootstrap -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- hack -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
+    <!-- 导入 自己的css -->
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <!-- 导入 index.css -->
+    <link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+    <link rel="stylesheet" tyoe="text/css" href="./css/backend-stud.css">
+
+    <!-- <body > -->
+</head>
+
+<body>
+    <!-- backend   -->
+    <div id="stud-zj-xs-lsl">
+        <!-- zj-xs-lsl-chart start -->
+        <div id="zj-xs-lsl-chart">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">组件等效小时离散率</div>
+                    <div class="panel-body">
+                        <div class="chart-top wrap1 clearfix">
+                            <div class="form2 pull-left">
+                                <span>电站</span>
+                                <input class="dh-form-control" type="text" placeholder="请输入搜索内容">
+                            </div>
+                            <div class="form3 pull-left">
+                                <button type="button" class="btn btn-default">搜索</button>
+                            </div>
+                        </div>
+                        <div class="chart-content row">
+                            <div class="content-left col-xs-3">
+                                <ul class="list-unstyled">
+                                    <li class="li-out">
+                                        <ul class="list-unstyled list-inline ul-in">
+                                            <li class="first">建议</li>
+                                            <li class="comment">建议整改</li>
+                                            <li>占比
+                                                <span>5</span>%</li>
+                                            <li>共
+                                                <span>1</span>个</li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-out">
+                                        <ul class="list-unstyled list-inline ul-in">
+                                            <li class="second">建议</li>
+                                            <li class="comment">稍差</li>
+                                            <li>占比
+                                                <span>5</span>%</li>
+                                            <li>共
+                                                <span>1</span>个</li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-out">
+                                        <ul class="list-unstyled list-inline ul-in">
+                                            <li class="third">建议</li>
+                                            <li class="comment">一般</li>
+                                            <li>占比
+                                                <span>5</span>%</li>
+                                            <li>共
+                                                <span>1</span>个</li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-out">
+                                        <ul class="list-unstyled list-inline ul-in">
+                                            <li class="fourth">建议</li>
+                                            <li class="comment">良好</li>
+                                            <li>占比
+                                                <span>5</span>%</li>
+                                            <li>共
+                                                <span>1</span>个</li>
+                                        </ul>
+                                    </li>
+                                    <li class="li-out">
+                                        <ul class="list-unstyled list-inline ul-in">
+                                            <li class="fifth">建议</li>
+                                            <li class="comment">优秀</li>
+                                            <li>占比
+                                                <span>5</span>%</li>
+                                            <li>共
+                                                <span>1</span>个</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right col-xs-9 row">
+                                <div class="right-pie col-xs-4"></div>
+                                <div class="right-scatter col-xs-8"></div>
+                            </div>
+                        </div>
+                        <div class="chart-bottom">
+                            <ul class="list-unstyled ul-out">
+                                <li class="li-out">
+                                    <ul class="list-unstyled list-inline row1">
+                                        <li>组件等效小时离散率</li>
+                                        <li class="dropdown">
+                                            <button id="dLabel"  class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                全部
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                                <li><a href="javascript:void(0)">HTML</a></li>
+                                                <li><a href="javascript:void(0)">CSS</a></li>
+                                                <li><a href="javascript:void(0)">JavaScript</a></li>
+                                            </ul>
+                                        </li>
+                                        <li style="color:#E10C20">&gt;20%(建议整改)</li>
+                                        <li style="color:#F19624">10%~20%(稍差)</li>
+                                        <li style="color:#36A8DE">-10%~10%(一般)</li>
+                                        <li style="color:#1270B6">-20%~-10%(良好)</li>
+                                        <li style="color:#074A81">&lt;-20%(优秀)</li>
+                                    </ul>
+                                </li>
+                                <li class="li-out">
+                                    <ul class="list-unstyled list-inline row2">
+                                        <li>额定功率:
+                                            <span>20</span>KW</li>
+                                        <li>平均温度:
+                                            <span>20</span>℃</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- zj-xs-lsl-chart end -->
+
+
+
+        <!-- zj-xs-lsl-table start -->
+        <div id="zj-xs-lsl-table">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-heading">组件等效小时离散率台账</div>
+                    <table class="table table-striped table-hover ">
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>组件序列号</th>
+                                <th>组件日发电量(kwh)</th>
+                                <th> 组件等效小时(h)</th>
+                                <th>等效小时偏差(h)</th>
+                                <th>差值比(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>767648246777</td>
+                                <td>20℃</td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>767648246777</td>
+                                <td>20℃</td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>767648246777</td>
+                                <td>20℃</td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>767648246777</td>
+                                <td>20℃</td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>767648246777</td>
+                                <td>20℃</td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <td>10%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <!-- zj-xs-lsl-table end -->
+    </div>
+</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./lib/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./lib/js/bootstrap.min.js"></script>
+<script>
+    $('.dropdown-menu').on('click', 'a', function () {
+        var text = $(this).html();
+        var htmlText = text + ' <span class="caret"></span>';
+        $(this).closest('.dropdown').find('.dropdown-toggle').html(htmlText);
+    });
+</script>
