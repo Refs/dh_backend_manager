@@ -23,7 +23,6 @@ $('.ulWrap').on('click','li',(event)=>{
     $('#inputControlPanel').val('');
     $('#inputControlPanel').val(generatorInputText());
     event.stopPropagation(); 
-
 })
 
 
