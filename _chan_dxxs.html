@@ -36,6 +36,8 @@
             background-color: red;
         }
         
+        
+
         .filterPanel .ulWrap {
 
         }
@@ -55,6 +57,18 @@
         .filterPanel .liWrap li:hover{
             background-color: peachpuff;
         }
+        
+        /* util class */
+
+        .hide {
+            display: hide;
+        }
+    
+        .li-selected {
+            color: yellow;
+        }
+
+
 
     </style>
     
@@ -79,8 +93,8 @@
                              &nbsp;
                             <div class="form pull-left panelWrap">
                                 <label>&nbsp;&nbsp;检索逆变器:&nbsp;</label>
-                                <input class="dh-form-control" type="text" placeholder="请输入搜索内容">
-                                <div class="filterPanel">
+                                <input id="inputControlPanel" class="dh-form-control" type="text" placeholder="请输入搜索内容">
+                                <div class="filterPanel hide">
                                     <ul class="list-unstyled ulWrap" >
                                         <ul class="list-unstyled list-inline liWrap">
                                             <li>1</li>
@@ -193,8 +207,4 @@
 <script src="./lib/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="./lib/js/bootstrap.min.js"></script>
-<script>
-    // this.document.documentElement.scrollHeight = 0 ;
-    // window.parent.reinitIframe();
-    // alert(this.document.documentElement.scrollHeight);
-</script>
+<script src="./js/panel.control.js"></script>
