@@ -22,6 +22,7 @@
 	<!-- 导入 index.css -->
 	<link rel="stylesheet" type="text/css" href="./css/backend-common.css">
 	<link rel="stylesheet" type="text/css" href="./css/backend-char.css" />
+	<link rel="stylesheet" href="./css/add.css">
 </head>
 
 <body>
@@ -66,7 +67,7 @@
 			<label id="monitor_show_info_ljfd">238957395834795</label>
 		</div>
 	</div>
-
+ 
 
 	<div class="monitor_top">组件监控图</div>
 
@@ -119,6 +120,48 @@
 				</li>
 			</ul>
 		</div>
+
+
+		<!-- change start -->
+		<div class="tip-wrap">
+			<div class="tip-content-wrap">
+				<ul class="list-unstyled" >
+					<li class="tab-head">
+						<ul class="row-content list-unstyled list-inline">
+							<!-- 此处一定要写成一行，目的是去除 空白的文本节点 -->
+							<li>编号</li><li>名称</li><li>序列号</li><li>当前功率</li><li>今日发电量</li><li>累计发电量</li>
+						</ul>
+					</li>
+					<li class="tab-row">
+						<ul class="row-content list-unstyled list-inline">
+							<li>1</li><li>1号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+						</ul>
+					</li>
+					<li class="tab-row">
+						<ul class="row-content list-unstyled list-inline">
+							<li>2</li><li>2号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+						</ul>
+					</li>
+					<li class="tab-row">
+						<ul class="row-content list-unstyled list-inline">
+							<li>3</li><li>3号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tip-button-wrap">
+				<button class="btn-prev">上一页</button>
+				<button class="btn-next">下一页</button>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
 		<div class="monitor_choose_content_data" id="monitor_data1" onclick="chooseNone()">
 			<div class="monitor_choose_content_data2" id="monitor_data2"></div>
 		</div>
