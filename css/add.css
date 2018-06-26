@@ -64,3 +64,32 @@
 .tip-button-wrap button.btn-next { 
     float: right;
 }
+
+
+
+
+.sort-button-wrap-parent {
+    position: relative;
+    margin-right: 20px;
+}
+
+.sort-button-wrap {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.sort-button-wrap .sort-up-button {
+    width: 20px;
+    height: 10px;
+    background: url(../img/sortup.png) no-repeat center;
+}
+
+.sort-button-wrap .sort-down-button {
+    width: 20px;
+    height: 10px;
+    background: url(../img/sortdown.png) no-repeat center;
+}
