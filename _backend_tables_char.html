@@ -94,37 +94,37 @@
 	<div class="monitor_choose_content clearfix">
 		<div class="monitor_choose_content_left">
 			<ul class=" list-unstyled">
-				<li class="monitor_left_li first ">
-					<span class="dh-font dh-icon-test"></span>
-					<p>逆变器</p>
+				<li class="monitor_left_li first tab-menu-item tab-menu-item-active ">
+					<a href="#nibianqi" aria-controls="nibianqi" role="tab" data-toggle="tab">
+						<span class="dh-font dh-icon-test"></span>
+						<p>逆变器</p>
+					</a>
 				</li>
-				<li class="monitor_left_li ">
-					<span class="dh-font dh-icon-test1"></span>
-					<p>汇流箱</p>
+				<li class="monitor_left_li tab-menu-item ">
+					<a href="#dianbiao" aria-controls="dianbiao" role="tab" data-toggle="tab">
+						<span class="dh-font dh-dianbiaoliebiao"></span>
+						<p>电表</p>
+					</a>
 				</li>
-				<li class="monitor_left_li ">
-					<span class="dh-font dh-dianbiaoliebiao"></span>
-					<p>电表</p>
+				<li class="monitor_left_li tab-menu-item ">
+					<a href="#zujian" aria-controls="dianbiao" role="tab" data-toggle="tab">
+						<span class="dh-font dh-zujian"></span>
+						<p>组件</p>
+					</a>
 				</li>
-				<li class="monitor_left_li ">
-					<span class="dh-font dh-zujian"></span>
-					<p>组件</p>
-				</li>
-				<li class="monitor_left_li ">
-					<span class="dh-font dh-qixiangzhan"></span>
-					<p>气象</p>
-				</li>
-				<li class="monitor_left_li ">
-					<span class="dh-font dh-fenbulei"></span>
-					<p>整体分布</p>
+				<li class="monitor_left_li tab-menu-item ">
+					<a href="#qixiangyi" aria-controls="dianbiao" role="tab" data-toggle="tab">
+						<span class="dh-font dh-qixiangzhan"></span>
+						<p>气象</p>
+					</a>
 				</li>
 			</ul>
 		</div>
 
-
 		<!-- change start -->
-		<div class="tip-wrap">
-			<div class="tip-content-wrap">
+		<div class="tip-wrap tab-content">
+			<!-- nibianqi tab -->
+			<div class="tip-content-wrap tab-pane active" id="nibianqi">
 				<ul class="list-unstyled" >
 					<li class="tab-head">
 						<ul class="row-content list-unstyled list-inline">
@@ -153,19 +153,102 @@
 						</ul>
 					</li>
 				</ul>
+				<div class="tip-button-wrap">
+					<button class="btn-prev">上一页</button>
+					<button class="btn-next">下一页</button>
+				</div>
 			</div>
-			<div class="tip-button-wrap">
-				<button class="btn-prev">上一页</button>
-				<button class="btn-next">下一页</button>
+			<!-- dianbiao tab -->
+			<div class="tip-content-wrap tab-pane " id="dianbiao">
+					<ul class="list-unstyled" >
+						<li class="tab-head">
+							<ul class="row-content list-unstyled list-inline">
+								<!-- 此处一定要写成一行，目的是去除 空白的文本节点 -->
+								<li>电表一</li><li>名称</li><li>序列号</li><li>当前功率</li><li>今日发电量</li><li>累计发电量</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>1</li><li>1号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>2</li><li>2号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>3</li><li>3号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="tip-button-wrap">
+						<button class="btn-prev">上一页</button>
+						<button class="btn-next">下一页</button>
+					</div>
+			</div>
+			<!-- zujian tab -->
+			<div class="tip-content-wrap tab-pane " id="zujian">
+					<ul class="list-unstyled" >
+						<li class="tab-head">
+							<ul class="row-content list-unstyled list-inline">
+								<!-- 此处一定要写成一行，目的是去除 空白的文本节点 -->
+								<li>组件</li><li>名称</li><li>序列号</li><li>当前功率</li><li>今日发电量</li><li>累计发电量</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>1</li><li>1号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>2</li><li>2号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>3</li><li>3号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="tip-button-wrap">
+						<button class="btn-prev">上一页</button>
+						<button class="btn-next">下一页</button>
+					</div>
+			</div>
+			<!-- qixiangyi -->
+			<div class="tip-content-wrap tab-pane " id="qixiangyi">
+					<ul class="list-unstyled" >
+						<li class="tab-head">
+							<ul class="row-content list-unstyled list-inline">
+								<!-- 此处一定要写成一行，目的是去除 空白的文本节点 -->
+								<li>气象仪</li><li>名称</li><li>序列号</li><li>当前功率</li><li>今日发电量</li><li>累计发电量</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>1</li><li>1号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>2</li><li>2号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+						<li class="tab-row">
+							<ul class="row-content list-unstyled list-inline">
+								<li>3</li><li>3号逆变器</li><li>A00001</li><li>1000KW</li><li>1000KW</li><li>1000KW</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="tip-button-wrap">
+						<button class="btn-prev">上一页</button>
+						<button class="btn-next">下一页</button>
+					</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
 
 		<div class="monitor_choose_content_data" id="monitor_data1" onclick="chooseNone()">
 			<div class="monitor_choose_content_data2" id="monitor_data2"></div>
