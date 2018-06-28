@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/flat-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="./css/backend-common.css">
+	<link rel="stylesheet" type="text/css" href="./css/add.css">
 	<script src="./lib/js/jquery.min.js"></script>
 	<script type="text/javascript">
 		function resizeIframe(obj) {
@@ -575,34 +576,86 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title">添加人员</h4>
+					<!-- 1. update the title -->
+					<h4 class="modal-title">维修详情</h4>
 				</div>
 				<div class="modal-body">
-					<div id="user-add-form">
-						<div class="form-horizontal">
-							<div class="form-group">
-								<label for="user-name" class="col-sm-2 control-label">姓名</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="user-name" placeholder="name">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="user-call" class="col-sm-2 control-label">联系方式</label>
-								<div class="col-sm-10">
-									<input type="text" class="form-control" id="user-call" placeholder="tel-number">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="user-char" class="col-sm-2 control-label">角色</label>
-								<select class="form-control col-sm-10" id="user-char">
-									<option>工作人员</option>
-									<option>运维人员</option>
-									<option>经销商管理员</option>
-									<option>集团管理员</option>
-								</select>
-							</div>
-						</div>
-					</div>
+					<!-- 2. update the modal content -->
+					<ul class="repair-list-wrap list-unstyled">
+
+						<li class="list-item-first">
+							<ul class="list-unstyled list-inline ">
+								<li class="item-left-wrap">
+									<div class="item-logo pull-left"></div>
+								</li>
+								<li class="item-right-wrap">
+									<div class="pull-left">
+										<p >保修详情</p>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>保修单号:</li>
+											<li style="color: #0870C3">78649</li>
+										</ul>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>保修时间:</li>
+											<li>2018-06-07</li>
+										</ul>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>报修原因:</li>
+											<li>组件发电过低且温度较高组件发电过低且温度较高组件发电过低且组件发电过低且温度较高组件发电过低且温度较高组件发电过低且温度较高</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="list-item-second">
+							<ul class="list-unstyled list-inline ">
+								<li class="item-left-wrap">
+									<div class="item-logo pull-left"></div>
+								</li>
+								<li class="item-right-wrap">
+									<div class="pull-left">
+										<p >保修详情</p>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>保修单号:</li>
+											<li style="color: #0870C3">78649</li>
+										</ul>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>保修时间:</li>
+											<li>2018-06-07</li>
+										</ul>
+										<ul class="list-unstyled list-inline item-list-row1">
+											<li>报修原因:</li>
+											<li>组件发电过低且温度较高组件发电过低且温度较高组件发电过低且组件发电过低且温度较高组件发电过低且温度较高组件发电过低且温度较高</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="list-item-third">
+								<ul class="list-unstyled list-inline ">
+										<li class="item-left-wrap">
+											<div class="item-logo pull-left"></div>
+										</li>
+										<li class="item-right-wrap">
+											<div class="pull-left">
+												<p >保修详情</p>
+												<ul class="list-unstyled list-inline item-list-row1">
+													<li>保修单号:</li>
+													<li style="color: #0870C3">78649</li>
+												</ul>
+												<ul class="list-unstyled list-inline item-list-row1">
+													<li>保修时间:</li>
+													<li>2018-06-07</li>
+												</ul>
+												<ul class="list-unstyled list-inline item-list-row1">
+													<li>报修原因:</li>
+													<li>组件发电过低且温度较高组件发电过低且温度较高组件发电过低且组件发电过低且温度较高组件发电过低且温度较高组件发电过低且温度较高</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+						</li>
+					</ul>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>

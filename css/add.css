@@ -125,3 +125,118 @@
     height: 10px;
     background: url(../img/sortdown.png) no-repeat center;
 }
+
+
+.repair-list-wrap{
+    /* center box */
+    float: none;
+    margin: 0 auto;
+}
+
+/* first item */
+.repair-list-wrap .list-item-first {
+    height: 152px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+.repair-list-wrap .list-item-first  .item-left-wrap {
+    width: 148px;
+    height: 152pxpx;
+}
+.repair-list-wrap .list-item-first  .item-left-wrap .item-logo {
+   width: 100%;
+   height: 152px;
+    background: url(../img/item-logo.png) no-repeat center ;
+    float: none;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.repair-list-wrap .list-item-first  .item-right-wrap {
+    width: 400px;
+    height: 150px;
+   
+    margin-left: 10px;
+}
+.repair-list-wrap .list-item-first  .item-right-wrap p {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+} 
+.repair-list-wrap .list-item-first  .item-right-wrap li{
+    font-size: 12px;
+}
+
+
+
+/* second item */
+.repair-list-wrap .list-item-second {
+    height: 152px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+.repair-list-wrap .list-item-second  .item-left-wrap {
+    width: 148px;
+    height: 152pxpx;
+}
+.repair-list-wrap .list-item-second  .item-left-wrap .item-logo {
+   width: 100%;
+   height: 152px;
+    background: url(../img/item-logo.png) no-repeat center ;
+    float: none;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.repair-list-wrap .list-item-second  .item-right-wrap {
+    width: 400px;
+    height: 150px;
+   
+    margin-left: 10px;
+}
+.repair-list-wrap .list-item-second  .item-right-wrap p {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+} 
+.repair-list-wrap .list-item-second  .item-right-wrap li{
+    font-size: 12px;
+}
+
+
+
+/* third item */
+.repair-list-wrap .list-item-third {
+    height: 152px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+.repair-list-wrap .list-item-third  .item-left-wrap {
+    width: 148px;
+    height: 152pxpx;
+}
+.repair-list-wrap .list-item-third  .item-left-wrap .item-logo {
+   width: 100%;
+   height: 152px;
+    background: url(../img/item-logo.png) no-repeat center ;
+    float: none;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.repair-list-wrap .list-item-third  .item-right-wrap {
+    width: 400px;
+    height: 150px;
+   
+    margin-left: 10px;
+}
+.repair-list-wrap .list-item-third  .item-right-wrap p {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+} 
+.repair-list-wrap .list-item-third  .item-right-wrap li{
+    font-size: 12px;
+}
