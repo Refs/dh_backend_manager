@@ -126,6 +126,11 @@
     background: url(../img/sortdown.png) no-repeat center;
 }
 
+.repair-modal-body {
+    height: 500px;
+    overflow-x: hidden;
+    padding-right: 0px;
+}
 
 .repair-list-wrap{
     /* center box */
@@ -135,13 +140,22 @@
 
 /* first item */
 .repair-list-wrap .list-item-first {
-    height: 152px;
+    /* height: 152px; */
     border: 1px solid gray;
     border-radius: 6px;
 }
+
+.repair-list-wrap .list-item-first>ul {
+    position: relative;
+    margin-left: 152px;
+}
+
 .repair-list-wrap .list-item-first  .item-left-wrap {
     width: 148px;
-    height: 152pxpx;
+    height: 152px;
+    position: absolute;
+    top: 0px;
+    left: -150px;
 }
 .repair-list-wrap .list-item-first  .item-left-wrap .item-logo {
    width: 100%;
@@ -154,7 +168,7 @@
 
 .repair-list-wrap .list-item-first  .item-right-wrap {
     width: 400px;
-    height: 150px;
+    /* height: 150px; */
    
     margin-left: 10px;
 }
@@ -171,14 +185,23 @@
 
 /* second item */
 .repair-list-wrap .list-item-second {
-    height: 152px;
+    /* height: 152px; */
     border: 1px solid gray;
     border-radius: 6px;
     margin-top: 12px;
 }
+
+.repair-list-wrap .list-item-second>ul {
+    position: relative;
+    margin-left: 152px;
+}
+
 .repair-list-wrap .list-item-second  .item-left-wrap {
     width: 148px;
-    height: 152pxpx;
+    height: 152px;
+    position: absolute;
+    top: 0px;
+    left: -150px;
 }
 .repair-list-wrap .list-item-second  .item-left-wrap .item-logo {
    width: 100%;
@@ -191,7 +214,7 @@
 
 .repair-list-wrap .list-item-second  .item-right-wrap {
     width: 400px;
-    height: 150px;
+    /* height: 150px; */
    
     margin-left: 10px;
 }
@@ -208,14 +231,23 @@
 
 /* third item */
 .repair-list-wrap .list-item-third {
-    height: 152px;
+    /* height: 152px; */
     border: 1px solid gray;
     border-radius: 6px;
     margin-top: 12px;
 }
+
+.repair-list-wrap .list-item-third>ul {
+    position: relative;
+    margin-left: 152px;
+}
+
 .repair-list-wrap .list-item-third  .item-left-wrap {
     width: 148px;
-    height: 152pxpx;
+    height: 152px;
+    position: absolute;
+    top: 0px;
+    left: -150px;
 }
 .repair-list-wrap .list-item-third  .item-left-wrap .item-logo {
    width: 100%;
@@ -228,7 +260,7 @@
 
 .repair-list-wrap .list-item-third  .item-right-wrap {
     width: 400px;
-    height: 150px;
+    /* height: 150px; */
    
     margin-left: 10px;
 }
@@ -239,4 +271,37 @@
 } 
 .repair-list-wrap .list-item-third  .item-right-wrap li{
     font-size: 12px;
+}
+
+
+.log-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 13px;
+    background-color: #EEEEEE;
+    border: none;
+    padding: 0px;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.log-button span {
+    font-size: 27px;
+    display: block;
+}
+
+.log-button p {
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.log-panel {
+    position: fixed;
+    top: 328px;
+    right: 80px;
+    width: 280px;
+    height: 300px;
+    background-color: #9F5B5B;
+    border-radius: 6px;
 }
